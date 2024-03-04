@@ -785,12 +785,12 @@ def gnome_info():
     gnome_feature_table.add_row(["Languages", "You can speak, write, and read Common and Halfling."])
     print(gnome_feature_table)
     print("Subrace information Below:")
-    halfling_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
-    halfling_feature_table.add_row(["Lightfoot", "Ability Score Increase", "Your Charisma Score increases by 1."])
-    halfling_feature_table.add_row(["Lightfoot", "Naturally Stealthy", "You can attempt tp hide as long as one of your party members is within 5 feet of you."])
-    halfling_feature_table.add_row(["Stout", "Ability Score Increase", "Your Constitution score increases by 1."])
-    halfling_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
-    print(halfling_feature_table)
+    halfling_subrace_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
+    halfling_subrace_feature_table.add_row(["Lightfoot", "Ability Score Increase", "Your Charisma Score increases by 1."])
+    halfling_subrace_feature_table.add_row(["Lightfoot", "Naturally Stealthy", "You can attempt tp hide as long as one of your party members is within 5 feet of you."])
+    halfling_subrace_feature_table.add_row(["Stout", "Ability Score Increase", "Your Constitution score increases by 1."])
+    halfling_subrace_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
+    print(halfling_subrace_feature_table)
 
 #get player race
 race_explanation = input("Would you like to see race information? ").lower()
