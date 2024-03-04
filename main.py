@@ -788,6 +788,7 @@ def gnome_info():
     gnome_subrace_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
     gnome_subrace_feature_table.add_row(["Forest", "Ability Score Increase", "Your Dexterity Score increases by 1."])
     gnome_subrace_feature_table.add_row(["Forest", "Natural Illusion", "You know the Minor Illusion cantrip. Intelligence is your modifier for it."])
+    gnome_subrace_feature_table.add_row(["Forest", "Speak with Small Beasts", "You can communicate simple ideas with beasts of Small or Tiny size."])
     gnome_subrace_feature_table.add_row(["Rock", "Ability Score Increase", "Your Constitution score increases by 1."])
     gnome_subrace_feature_table.add_row(["Rock", "Artificer's Lore", "Whenever you make a History check related to magic items, alchemical objects, or devices, you can add double proficieny bonus."])
     gnome_subrace_feature_table.add_row(["Rock", "Tinker", "You can use tinker's tools to create a small toy that can give advantage on Performance checks."])
