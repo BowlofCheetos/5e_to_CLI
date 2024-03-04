@@ -40,6 +40,7 @@ no_l = ['no', 'n']
 dwarf_subraces = ['Hill', 'Mountain']
 elf_subraces = ['High', 'Wood', 'Drow']
 halfling_subraces = ['Lightfoot', 'Stout']
+gnome_subraces = ['Forest', 'Rock']
 all_languages = ['Abyssal', 'Celestial', 'Draconic', 'Deep Speech', 'Dwarvish', 'Elvish', 'Giant', 'Gnomish', 'Goblin', 'Halfling', 'Infernal', 'Orc', 'Primordial', 'Sylvan', 'Undercommon']
 
 #weapon skeleton
@@ -229,6 +230,7 @@ fey_ancestry = False
 mask_of_the_wild = False
 lucky = False
 naturally_stealthy = False
+speak_with_small_beasts = False
 
 #ability score table
 def modifier(score):
@@ -795,10 +797,45 @@ def gnome_info():
 
 #gnome traits
 def gnome_traits():
-    global player_int_score, player_int_mod
+    global player_int_score, player_int_mod, player_darkvision, proficient_saving_throws, player_dex_score, player_dex_mod, speak_with_small_beasts, player_con_score, player_con_mod, history_check, performance_check
     player_int_score += 2
     modifier(player_int_score)
     player_int_mod = score_modifier
+    player_darkvision = True
+    proficient_saving_throws += "M: Intelligence", "M: Wisdom", "M: Charisma"
+    player_languages.append("Gnomish")
+    #subrace
+    gnome_subrace_information = input("Would you like to view subrace information? ").lower()
+    while gnome_subrace_information not in yes_l and gnome_subrace_information not in no_l:
+        gnome_subrace_information = input("Would you like to view subrace information? ").lower()
+    if gnome_subrace_information in yes_l:
+        print("Subrace information Below:")
+        gnome_subrace_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
+        gnome_subrace_feature_table.add_row(["Forest", "Ability Score Increase", "Your Dexterity Score increases by 1."])
+        gnome_subrace_feature_table.add_row(["Forest", "Natural Illusion", "You know the Minor Illusion cantrip. Intelligence is your modifier for it."])
+        gnome_subrace_feature_table.add_row(["Forest", "Speak with Small Beasts", "You can communicate simple ideas with beasts of Small or Tiny size."])
+        gnome_subrace_feature_table.add_row(["Rock", "Ability Score Increase", "Your Constitution score increases by 1."])
+        gnome_subrace_feature_table.add_row(["Rock", "Artificer's Lore", "Whenever you make a History check related to magic items, alchemical objects, or devices, you can add double proficieny bonus."])
+        gnome_subrace_feature_table.add_row(["Rock", "Tinker", "You can use tinker's tools to create a small toy that can give double proficiency on Performance checks."])
+        print(gnome_subrace_feature_table)
+    gnome_subrace = input("What subrace do you choose? (Forest or Rock) ").title()
+    while gnome_subrace not in gnome_subraces:
+        gnome_subrace = input("What subrace do you choose? (Forest or Rock) ").title()
+    #forest
+    if gnome_subrace == gnome_subraces[0]:
+        print("Welcome " + player_name + ", the Forest Gnome!")
+        player_dex_score += 1
+        modifier(player_dex_score)
+        player_dex_mod = score_modifier
+        player_spells.append(dancing_lights)
+        speak_with_small_beasts = True
+    else:
+        print("Welcome " + player_name + ", the Rock Gnome!")
+        player_con_score += 1
+        modifier(player_con_score)
+        player_con_mod = score_modifier
+        history_check = player_int_mod + (player_prof_bonus * 2)
+        performance_check = player_cha_mod + (player_prof_bonus * 2)
 
 #get player race
 race_explanation = input("Would you like to see race information? ").lower()
