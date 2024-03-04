@@ -737,42 +737,41 @@ def dragonborn_traits():
         draconic_ancestry_feature_table.add_row(["Silver", "Cold", "CON", "15ft", "Cone"])
         draconic_ancestry_feature_table.add_row(["White", "Cold", "CON", "15ft", "Cone"])
         print(draconic_ancestry_feature_table)
-    else:
+    print(draconic_ancestry_list)
+    ancestry_pick = input("Which ancestry would you like to choose? ").title()
+    while ancestry_pick not in draconic_ancestry_list:
         print(draconic_ancestry_list)
-        ancestry_pick = input("Which ancestry would you like to choose? ").title()
-        while ancestry_pick not in draconic_ancestry_list:
-            print(draconic_ancestry_list)
-            ancestry_pick = input("Which ancestry would you like to choose? ")
-        if ancestry_pick == draconic_ancestry_list[0]:
-            damage_resistances.append("Acid")
-            plr_breath_weapon = black_breath_weapon
-        elif ancestry_pick == draconic_ancestry_list[1]:
-            damage_resistances.append("Lightning")
-            plr_breath_weapon = blue_breath_weapon
-        elif ancestry_pick == draconic_ancestry_list[2]:
-            damage_resistances.append("Fire")
-            plr_breath_weapon = brass_breath_weapon
-        elif ancestry_pick == draconic_ancestry_list[3]:
-            damage_resistances.append("Lightning")
-            plr_breath_weapon = bronze_breath_weapon
-        elif ancestry_pick == draconic_ancestry_list[4]:
-            damage_resistances.append("Acid")
-            plr_breath_weapon = copper_breath_weapon
-        elif ancestry_pick == draconic_ancestry_list[5]:
-            damage_resistances.append("Fire")
-            plr_breath_weapon = gold_breath_weapon
-        elif ancestry_pick == draconic_ancestry_list[6]:
-            damage_resistances.append("Poison")
-            plr_breath_weapon = green_breath_weapon
-        elif ancestry_pick == draconic_ancestry_list[7]:
-            damage_resistances.append("Fire")
-            plr_breath_weapon = red_breath_weapon
-        elif ancestry_pick == draconic_ancestry_list[8]:
-            damage_resistances.append("Cold")
-            plr_breath_weapon = silver_breath_weapon
-        else:
-            damage_resistances.append("Cold")
-            plr_breath_weapon = white_breath_weapon
+        ancestry_pick = input("Which ancestry would you like to choose? ")
+    if ancestry_pick == draconic_ancestry_list[0]:
+        damage_resistances.append("Acid")
+        plr_breath_weapon = black_breath_weapon
+    elif ancestry_pick == draconic_ancestry_list[1]:
+        damage_resistances.append("Lightning")
+        plr_breath_weapon = blue_breath_weapon
+    elif ancestry_pick == draconic_ancestry_list[2]:
+        damage_resistances.append("Fire")
+        plr_breath_weapon = brass_breath_weapon
+    elif ancestry_pick == draconic_ancestry_list[3]:
+        damage_resistances.append("Lightning")
+        plr_breath_weapon = bronze_breath_weapon
+    elif ancestry_pick == draconic_ancestry_list[4]:
+        damage_resistances.append("Acid")
+        plr_breath_weapon = copper_breath_weapon
+    elif ancestry_pick == draconic_ancestry_list[5]:
+        damage_resistances.append("Fire")
+        plr_breath_weapon = gold_breath_weapon
+    elif ancestry_pick == draconic_ancestry_list[6]:
+        damage_resistances.append("Poison")
+        plr_breath_weapon = green_breath_weapon
+    elif ancestry_pick == draconic_ancestry_list[7]:
+        damage_resistances.append("Fire")
+        plr_breath_weapon = red_breath_weapon
+    elif ancestry_pick == draconic_ancestry_list[8]:
+        damage_resistances.append("Cold")
+        plr_breath_weapon = silver_breath_weapon
+    else:
+        damage_resistances.append("Cold")
+        plr_breath_weapon = white_breath_weapon
 
 #gnome info
 def gnome_info():
