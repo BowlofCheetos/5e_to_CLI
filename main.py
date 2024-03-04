@@ -599,7 +599,7 @@ def halfling_info():
     halfling_feature_table.add_row(["Ability Score Increase", "Your Dexterity Score increases by 2."])
     halfling_feature_table.add_row(["Speed", "Your base walking speed is 25 feet."])
     halfling_feature_table.add_row(["Lucky", "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll and must use the new die."])
-    halfling_feature_table.add_row(["Brave", "Ypi have advantage on saving throws against being frightened."])
+    halfling_feature_table.add_row(["Brave", "You have advantage on saving throws against being frightened."])
     halfling_feature_table.add_row(["Languages", "You can speak, write, and read Common and Halfling."])
     print(halfling_feature_table)
     print("Subrace information Below:")
@@ -778,19 +778,27 @@ def dragonborn_traits():
 def gnome_info():
     print("As a Gnome you gain main features, they are listed below:")
     gnome_feature_table = PrettyTable(["Feature", "Description"])
-    gnome_feature_table.add_row(["Ability Score Increase", "Your Dexterity Score increases by 2."])
+    gnome_feature_table.add_row(["Ability Score Increase", "Your Intelligence Score increases by 2."])
     gnome_feature_table.add_row(["Speed", "Your base walking speed is 25 feet."])
-    gnome_feature_table.add_row(["Lucky", "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll and must use the new die."])
-    gnome_feature_table.add_row(["Brave", "Ypi have advantage on saving throws against being frightened."])
-    gnome_feature_table.add_row(["Languages", "You can speak, write, and read Common and Halfling."])
+    gnome_feature_table.add_row(["Darkvision", "You can see in dim light within 60 feet of you in shades of grey."])
+    gnome_feature_table.add_row(["Gnome Cunning", "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."])
+    gnome_feature_table.add_row(["Languages", "You can speak, write, and read Common and Gnomish."])
     print(gnome_feature_table)
     print("Subrace information Below:")
-    halfling_subrace_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
-    halfling_subrace_feature_table.add_row(["Lightfoot", "Ability Score Increase", "Your Charisma Score increases by 1."])
-    halfling_subrace_feature_table.add_row(["Lightfoot", "Naturally Stealthy", "You can attempt tp hide as long as one of your party members is within 5 feet of you."])
-    halfling_subrace_feature_table.add_row(["Stout", "Ability Score Increase", "Your Constitution score increases by 1."])
-    halfling_subrace_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
-    print(halfling_subrace_feature_table)
+    gnome_subrace_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
+    gnome_subrace_feature_table.add_row(["Forest", "Ability Score Increase", "Your Dexterity Score increases by 1."])
+    gnome_subrace_feature_table.add_row(["Forest", "Natural Illusion", "You know the Minor Illusion cantrip. Intelligence is your modifier for it."])
+    gnome_subrace_feature_table.add_row(["Rock", "Ability Score Increase", "Your Constitution score increases by 1."])
+    gnome_subrace_feature_table.add_row(["Rock", "Artificer's Lore", "Whenever you make a History check related to magic items, alchemical objects, or devices, you can add double proficieny bonus."])
+    gnome_subrace_feature_table.add_row(["Rock", "Tinker", "You can use tinker's tools to create a small toy that can give advantage on Performance checks."])
+    print(gnome_subrace_feature_table)
+
+#gnome traits
+def gnome_traits():
+    global player_int_score, player_int_mod
+    player_int_score += 2
+    modifier(player_int_score)
+    player_int_mod = score_modifier
 
 #get player race
 race_explanation = input("Would you like to see race information? ").lower()
