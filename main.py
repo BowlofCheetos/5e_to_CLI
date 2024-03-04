@@ -696,7 +696,7 @@ def dragonborn_info():
     dragonborn_feature_table = PrettyTable(["Feature", "Description"])
     dragonborn_feature_table.add_row(["Ability Score Increase", "Your Strength score increases by 2, and your Charisma score increases by 1."])
     dragonborn_feature_table.add_row(["Speed", "Your base walking speed is 30 feet."])
-    dragonborn_feature_table.add_row(["Draconic Ancestry", "Choose one type from the Draconic Ancestry table below. Your breath weapon and resistance use this typle."])
+    dragonborn_feature_table.add_row(["Draconic Ancestry", "Choose one type from the Draconic Ancestry table below. Your breath weapon and resistance use this type."])
     dragonborn_feature_table.add_row(["Languages", "You can speak, read and write Common and Draconic."])
     print(dragonborn_feature_table)
     draconic_ancestry_feature_table = PrettyTable(["Dragon", "Damage Type", "Save Type", "Range", "Shape"])
