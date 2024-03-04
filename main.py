@@ -603,12 +603,12 @@ def halfling_info():
     halfling_feature_table.add_row(["Languages", "You can speak, write, and read Common and Halfling."])
     print(halfling_feature_table)
     print("Subrace information Below:")
-    halfling_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
-    halfling_feature_table.add_row(["Lightfoot", "Ability Score Increase", "Your Charisma Score increases by 1."])
-    halfling_feature_table.add_row(["Lightfoot", "Naturally Stealthy", "You can attempt tp hide as long as one of your party members is within 5 feet of you."])
-    halfling_feature_table.add_row(["Stout", "Ability Score Increase", "Your Constitution score increases by 1."])
-    halfling_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
-    print(halfling_feature_table)
+    halfling_subrace_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
+    halfling_subrace_feature_table.add_row(["Lightfoot", "Ability Score Increase", "Your Charisma Score increases by 1."])
+    halfling_subrace_feature_table.add_row(["Lightfoot", "Naturally Stealthy", "You can attempt tp hide as long as one of your party members is within 5 feet of you."])
+    halfling_subrace_feature_table.add_row(["Stout", "Ability Score Increase", "Your Constitution score increases by 1."])
+    halfling_subrace_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
+    print(halfling_subrace_feature_table)
 
 #halfling traits
 def halfling_traits():
@@ -626,12 +626,12 @@ def halfling_traits():
         halfling_subrace_information = input("Would you like to view subrace information? ").lower()
     if halfling_subrace_information in yes_l:
         print("Subrace information Below:")
-        halfling_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
-        halfling_feature_table.add_row(["Lightfoot", "Ability Score Increase", "Your Charisma Score increases by 1."])
-        halfling_feature_table.add_row(["Lightfoot", "Naturally Stealthy", "You can attempt tp hide as long as one of your party members is within 5 feet of you."])
-        halfling_feature_table.add_row(["Stout", "Ability Score Increase", "Your Constitution score increases by 1."])
-        halfling_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
-        print(halfling_feature_table)
+        halfling_subrace_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
+        halfling_subrace_feature_table.add_row(["Lightfoot", "Ability Score Increase", "Your Charisma Score increases by 1."])
+        halfling_subrace_feature_table.add_row(["Lightfoot", "Naturally Stealthy", "You can attempt tp hide as long as one of your party members is within 5 feet of you."])
+        halfling_subrace_feature_table.add_row(["Stout", "Ability Score Increase", "Your Constitution score increases by 1."])
+        halfling_subrace_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
+        print(halfling_subrace_feature_table)
     halfling_subrace = input("What subrace do you choose? (Lightfoot or Stout) ").title()
     while halfling_subrace not in halfling_subraces:
         halfling_subrace = input("What subrace do you choose? (Lightfoot or Stout) ").title()
