@@ -1,5 +1,6 @@
 from global_vars import *
 from player_intro import *
+from gear import *
 from prettytable import PrettyTable
 
 #dwarf traits
