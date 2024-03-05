@@ -6,6 +6,7 @@ modifier_base = -1
 #global lists
 yes_l = ['yes', 'y']
 no_l = ['no', 'n']
+all_languages = ['Dwarvish', 'Elvish', 'Giant', 'Gnomish', 'Goblin', 'Goblin', 'Halfling', 'Orc']
 
 #race lists
 all_races = ['Dwarf', 'Elf', 'Halfling', 'Human',]
@@ -28,3 +29,23 @@ con_mod = modifier_base
 int_mod = modifier_base
 wis_mod = modifier_base
 cha_mod = modifier_base
+
+#saving throws
+proficient_saving_throws = []
+
+#damage adjustments
+damage_resistance = []
+
+#known languages
+known_languages = ['Common']
+
+#special traits
+special_traits = []
+dwarven_toughness = 0
+
+#player race
+player_race = base
+player_subrace = base
+
+#proficient armor
+proficient_armor = []
