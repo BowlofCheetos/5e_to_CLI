@@ -5,10 +5,11 @@ from prettytable import PrettyTable
 
 #dwarf traits
 def dwarf_traits():
-    global con_score, special_traits, proficient_saving_throws, damage_resistance, known_languages, wis_score, dwarven_toughness, player_race, player_subrace, str_score, proficient_armor
+    global con_score, special_traits, proficient_saving_throws, damage_resistance, known_languages, wis_score, dwarven_toughness, player_race, player_subrace, str_score, proficient_armor, proficient_weapons
     #base traits
     player_race = "Dwarf"
     con_score += 2
+    proficient_weapons += battleaxe, handaxe, light_hammer, warhammer
     special_traits += "Darkvision", "Stonecunning"
     proficient_saving_throws += "Poison"
     damage_resistance += "Poison"

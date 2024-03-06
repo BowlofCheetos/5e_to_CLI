@@ -47,5 +47,6 @@ dwarven_toughness = 0
 player_race = base
 player_subrace = base
 
-#proficient armor
+#proficient gear
 proficient_armor = []
+proficient_weapons = []
