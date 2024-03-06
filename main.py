@@ -8,6 +8,7 @@ from modifier_assign import *
 #introduction
 intro()
 player_name()
+from player_intro import *
 
 #score selection
 score_assign()
