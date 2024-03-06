@@ -65,19 +65,17 @@ gift_of_gab = spell("Gift of Gab", "B", False, 1, False, None, None, "Skillfully
 heat_metal = spell("Heat Metal", "A", True, 10, True, 16, "Fire", "You cause the object to glow red-hot.", True)
 hold_person = spell("Hold Person", "A", True, 10, True, None, None, "Choose a humanoid in range and paralyze", True)
 invisibility = spell("Invisibility", "A", False, 600, False, None, None, "Creature you touch becomes invisible", True)
-
 knock = spell("Knock", "A", True, 1, False, None, None, "A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked", False)
 lesser_restoration = spell("Lesser Restoration", "A", False, 1, False, None, None, "You touch a creature and can end either one disease or one condition afflicting it.", False)
 locate_animals_or_plants = spell("Locate Animals or Plants", "A", False, 1, False, None, None, "You learn the direction and distance to the closest creature or plant", False)
 locate_object = spell("Locate Object", "A", False, 100, False, None, None, "Describe or name an object that is familiar to you", True)
 magic_mouth = spell("Magic Mouth", "R", True, 1, False, None, None, "You implant a message within an object in range, a message that is uttered when a trigger condition is met.", False)
 phantasmal_force = spell("Phantasmal Force", "A", True, 10, True, None, None, "You craft an illusion that takes root in the mind of a creature that you can see within range.", True)
-
 see_invisibility = spell("See Invisibiltiy", "A", False, 600, False, None, None, "For the duration, you see invisible creatures and objects as if they were visible", False)
-shatter = spell("Shatter", "A", True, 1, )
-silence = spell("Silence", "A", True, 100)
-suggestion = spell("Suggestion", "A", True, 4800)
-zone_of_truth = spell("Zone of Truth", "A", True, 100)
+shatter = spell("Shatter", "A", True, 1, True, 24, "Thunder", "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range.", False)
+silence = spell("Silence", "A", True, 100, False, None, None, "No sound can be created within or pass through a 20-foot-radius sphere", True)
+suggestion = spell("Suggestion", "A", True, 4800, True, None, None, "You suggest a course of activity (limited to a sentence or two) and magically influence a creature", True)
+zone_of_truth = spell("Zone of Truth", "A", True, 100, True, None, None, "You create a magical zone that guards against deception ", False)
 bard_level_2_spells = [aid, animal_messenger, blindness_deafness, calm_emotions, cloud_of_daggers, crown_of_madness, detect_thoughts, enhance_ability, enthrall, gift_of_gab, heat_metal, hold_person, invisibility, knock, lesser_restoration, locate_animals_or_plants, locate_object, magic_mouth, phantasmal_force, see_invisibility, shatter, silence, suggestion, zone_of_truth]
 
 #cleric
