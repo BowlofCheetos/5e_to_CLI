@@ -78,6 +78,27 @@ suggestion = spell("Suggestion", "A", True, 4800, True, None, None, "You suggest
 zone_of_truth = spell("Zone of Truth", "A", True, 100, True, None, None, "You create a magical zone that guards against deception ", False)
 bard_level_2_spells = [aid, animal_messenger, blindness_deafness, calm_emotions, cloud_of_daggers, crown_of_madness, detect_thoughts, enhance_ability, enthrall, gift_of_gab, heat_metal, hold_person, invisibility, knock, lesser_restoration, locate_animals_or_plants, locate_object, magic_mouth, phantasmal_force, see_invisibility, shatter, silence, suggestion, zone_of_truth]
 
+#level_3
+bestow_curse = spell("Bestow Curse", "A", False, 1, True, None, None, "A creature becomes cursed for a duration", True)
+clairvoyance = spell("Clairvoyance", 10, True, 100, False, None, None, "You create an invisible sensor within range", True)
+dispel_magic = spell("Dispel Magic", "A", True, 1, True, None, None, "Choose any creature, object, or magical effect within range to dispel", False)
+fear = spell("Fear", "A", False, 1, True, None, None, "You project a phantasmal image of a creature’s worst fears.", True)
+feign_death = spell("Feign Death", "A", False, 600, False, None, None, "You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.", False)
+glyth_of_warding = spell("Glyph of Warding", 600, False, 600, True, None, None, "When you cast this spell, you inscribe a glyph that creates a magical effect triggered by other creatures", False)
+
+hypnotic_pattern = spell("Hypnotic Pattern", "A", True, 1)
+leomunds_tiny_hut = spell("Leomund's Tiny Hut", 1, False, 4800)
+major_image = spell("Major Image", "A", True, 100)
+nondetection = spell("Nondetection", "A", False, 4800)
+plant_growth = spell("Plant Growth", "A", True, 1)
+
+sending = spell("Sending", "A", True, 1)
+speak_with_dead = spell("Speak with Dead", "A", True, 100)
+speak_with_plants = spell("Speak with Plants", "A", True, 100)
+stinking_cloud = spell("Stinking Cloud", "A", True, 1)
+tongues = spell("Tongues", "A", False, 600, )
+bard_level_3_spells = [bestow_curse, clairvoyance, dispel_magic, fear, feign_death, glyth_of_warding, hypnotic_pattern, leomunds_tiny_hut, major_image, nondetection, plant_growth, sending, speak_with_dead, speak_with_plants, stinking_cloud, tongues]
+
 #cleric
 #cantrips
 
