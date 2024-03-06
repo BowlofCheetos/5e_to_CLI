@@ -10,6 +10,7 @@ prof_bonus = 2
 yes_l = ['yes', 'y']
 no_l = ['no', 'n']
 all_languages = ['Dwarvish', 'Elvish', 'Giant', 'Gnomish', 'Goblin', 'Goblin', 'Halfling', 'Orc']
+player_classes = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
 
 #race lists
 all_races = ['Dwarf', 'Elf', 'Halfling', 'Human',]
