@@ -28,11 +28,7 @@ vicious_mockery = spell("Vicious Mockery", "A", True, 1, True, 4, "Psychic", "Di
 bard_cantrips = [blade_ward, dancing_lights, friends, light, mage_hand, mending, message, minor_illusion, prestidigitation, true_strike, vicious_mockery]
 
 #level_1
-<<<<<<< HEAD
-animal_friendship spell()
-=======
 animal_friendship = spell()
->>>>>>> 53b8e1e (Bard cantrips and L1 spells created.)
 bane = spell()
 charm_person = spell()
 comprehend_languages = spell()
