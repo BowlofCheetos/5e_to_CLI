@@ -90,14 +90,14 @@ def elf_traits():
             if cantrip_choice == x.name:
                 known_cantrips.append(x)
         print(all_languages)
-        extra_language = input("What language do you choose? ")
+        extra_language = input("What language do you choose? ").title()
         while extra_language not in all_languages:
             print(all_languages)
-            extra_language = input("What language do you choose? ")
+            extra_language = input("What language do you choose? ").title()
         while extra_language == all_languages[1]:
-            print("You already known Elvish, choose another.")
+            print("You already known Elvish, choose another.").title()
             print(all_languages)
-            extra_language = input("What language do you choose? ")
+            extra_language = input("What language do you choose? ").title()
         known_languages.append(extra_language)
         player_subrace = "High Elf"
     elif subrace_choice == elf_subraces[1]:
@@ -159,10 +159,10 @@ def human_traits():
     wis_score += 1
     cha_score += 1
     print(all_languages)
-    extra_language = input("What language do you choose? ")
+    extra_language = input("What language do you choose? ").title()
     while extra_language not in all_languages:
         print(all_languages)
-        extra_language = input("What language do you choose? ")
+        extra_language = input("What language do you choose? ").title()
     known_languages.append(extra_language)
 
 #race selection
