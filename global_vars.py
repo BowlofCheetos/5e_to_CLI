@@ -37,6 +37,7 @@ cha_mod = modifier_base
 #player starting values
 player_level = 1
 player_hit_dice = base
+player_class = base
 
 #saving throws
 proficient_saving_throws = []
