@@ -31,7 +31,6 @@ def elf_info():
     elf_feature_table.add_row(["Darkvision", "You can see in dim light within 60 feet of you in shades of grey."])
     elf_feature_table.add_row(["Keen Senses", "You have proficiency in the Perception skill."])
     elf_feature_table.add_row(["Fey Ancestry", "You have advantage on saving throws against being charmed and magic can't put you to sleep."])
-    elf_feature_table.add_row(["Stonecunning", "Whenever you make a History check regarding stonework, add double your proficiency bonus to the check."])
     elf_feature_table.add_row(["Languages", "You can speak, read and write Common and Elvish."])
     print(elf_feature_table)
     #subrace info

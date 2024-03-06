@@ -2,6 +2,7 @@
 base = 0
 score_base = 8
 modifier_base = -1
+prof_bonus = 2
 
 #global lists
 yes_l = ['yes', 'y']
@@ -32,6 +33,7 @@ cha_mod = modifier_base
 
 #saving throws
 proficient_saving_throws = []
+saving_throw_adv = []
 
 #damage adjustments
 damage_resistance = []
@@ -50,3 +52,9 @@ player_subrace = base
 #proficient gear
 proficient_armor = []
 proficient_weapons = []
+
+#proficient skills
+proficient_skills = []
+
+#known spells
+known_cantrips = []
