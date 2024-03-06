@@ -6,5 +6,10 @@ from race_info import *
 intro()
 player_name()
 
+#score selection
+
+
 #race info
 race_info()
+
+#race traits
