@@ -51,6 +51,34 @@ thunderwave = spell("Thunderwave", "A", True, 1, True, True, "Thunder", "A wave 
 unseen_servant = spell("Unseen Servant", "A", True, 600, False, None, None, "This spell creates an invisible, mindless, shapeless, Medium force", False)
 bard_level_1_spells = [animal_friendship, bane, charm_person, comprehend_languages, cure_wounds, detect_magic, disguise_self, dissonent_whispers, faerie_fire, feather_fall, healing_word, heroism, identify, illusory_script, longstrider, silent_image, sleep, speak_with_animals, tashas_hideous_laughter, thunderwave, unseen_servant]
 
+#level_2
+aid = spell("Aid", "A", True, 4800, False, None, None, "Your spell bolsters your allies with toughness and resolve", False)
+animal_messenger = spell("Animal Messenger", "A", True, 14400, False, None, None, "You use an animal to deliver a message",False)
+blindness_deafness = spell("Blindness/Deafness", "A", True, 1, True, None, None, "You can blind or deafen a foe.", False)
+calm_emotions = spell("Calm Emotions", "A", True, 10, True, None, None, "You attempt to suppress strong emotions in a group of people", True)
+cloud_of_daggers = spell("Cloud of Daggers", "A", True, 10, False, 16, "Slashing", "You fill the air with spinning daggers in a cube 5 feet on each side", True)
+crown_of_madness = spell("Crown of Madness", "A", True, 10, True, None, None, "A twisted crown of jagged iron appears on humanoid of your choice", True)
+
+detect_thoughts = spell("Detect Thoughts", "A", False, 10)
+enhance_ability = spell("Enhance Ability", "A", False, 600)
+enthrall = spell("Enthrall", "A", True, 1)
+gift_of_gab = spell("Gift of Gab", "B", False, 1)
+heat_metal = spell("Heat Metal", "A", True, 10)
+hold_person = spell("Hold Person", "A", True, 10)
+invisibility = spell("Invisibility", "A", False, 600)
+knock = spell("Knock", "A", True, 1)
+lesser_restoration = spell("Lesser Restoration", "A", False, 1)
+locate_animals_or_plants = spell("Locate Animals or Plants", "A", False, 1)
+locate_object = spell("Locate Object", "A", False, 100)
+magic_mouth = spell("Magic Mouth", "R", True, 1)
+phantasmal_force = spell("Phantasmal Force", "A", True, 10)
+see_invisibility = spell("See Invisibiltiy", "A", False, 600)
+shatter = spell("Shatter", "A", True, 1)
+silence = spell("Silence", "A", True, 100)
+suggestion = spell("Suggestion", "A", True, 4800)
+zone_of_truth = spell("Zone of Truth", "A", True, 100)
+bard_level_2_spells = [aid, animal_messenger, blindness_deafness, calm_emotions, cloud_of_daggers, crown_of_madness, detect_thoughts, enhance_ability, enthrall, gift_of_gab, heat_metal, hold_person, invisibility, knock, lesser_restoration, locate_animals_or_plants, locate_object, magic_mouth, phantasmal_force, see_invisibility, shatter, silence, suggestion, zone_of_truth]
+
 #cleric
 #cantrips
 
