@@ -111,3 +111,54 @@ def elf_traits():
         known_cantrips.append(dancing_lights)
         proficient_weapons += rapier, shortsword, hand_crossbow
         player_subrace = "Drow"
+
+#halfling traits
+def halfling_traits():
+    global dex_score, cha_score, player_subrace, con_score
+    dex_score += 2
+    special_traits.append("Lucky")
+    saving_throw_adv.append("Frightened")
+    known_languages.append("Halfling")
+    #subrace selection and traits
+    print(halfling_subraces)
+    subrace_info = input("Would you like to view subrace info? ").lower()
+    while subrace_info not in yes_l and subrace_info not in no_l:
+        print(halfling_subraces)
+        subrace_info = input("Would you like to view subrace info? ").lower()
+    if subrace_info in yes_l:
+        halfling_subrace_feature_table = PrettyTable(["Subrace", "Feature", "Description"])
+        halfling_subrace_feature_table.add_row(["Lightfoot", "Ability Score Increase", "Your Charisma score increases by 1."])
+        halfling_subrace_feature_table.add_row(["Lightfoot", "Naturally Stealthy", "You can attempt to hide when there is another ally near you."])
+        halfling_subrace_feature_table.add_row(["Stout", "Ability Score Increase", "Your Constitution score increases by 1."])
+        halfling_subrace_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
+        print(halfling_subrace_feature_table)
+    print(halfling_subraces)
+    subrace_choice = input("What subrace would you like to be? ").title()
+    while subrace_choice not in halfling_subraces:
+        print(halfling_subraces)
+        subrace_choice = input("What subrace would you like to be? ").title()
+    if subrace_choice == halfling_subraces[0]:
+        cha_score += 1
+        special_traits.append("Naturally Stealthy")
+        player_subrace = "Lightfoot Halfling"
+    else:
+        con_score += 1
+        saving_throw_adv.append("Poison")
+        damage_resistance.append("Poison")
+        player_subrace = "Stout Halfling"
+
+#human traits
+def human_traits():
+    global str_score, dex_score, con_score, int_score, wis_score, cha_score
+    str_score += 1
+    dex_score += 1
+    con_score += 1
+    int_score += 1
+    wis_score += 1
+    cha_score += 1
+    print(all_languages)
+    extra_language = input("What language do you choose? ")
+    while extra_language not in all_languages:
+        print(all_languages)
+        extra_language = input("What language do you choose? ")
+    known_languages.append(extra_language)

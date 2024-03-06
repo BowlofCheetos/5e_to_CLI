@@ -1,3 +1,5 @@
+import random
+
 #global variables
 base = 0
 score_base = 8
@@ -58,3 +60,18 @@ proficient_skills = []
 
 #known spells
 known_cantrips = []
+
+#special functions
+def d20():
+    global roll_result
+    roll_result = random.randint(1, 20)
+    return roll_result
+
+def lucky():
+    global roll_result
+    if roll_result == 1:
+        reroll = input("Would you like to reroll using Lucky? ").lower()
+        while reroll not in yes_l and reroll not in no_l:
+            reroll = input("Would you like to reroll using Lucky? ").lower()
+        if reroll in yes_l:
+            roll_result = d20()
