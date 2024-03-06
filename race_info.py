@@ -74,13 +74,15 @@ def human_info():
 #display info
 def race_info():
     race_info_view = input("Would you like to view race info? ").lower()
-    if race_info_view in yes_l:
+    while race_info_view not in yes_l and race_info_view not in no_l:
+        race_info_view = input("Would you like to view race info? ").lower()
+    while race_info_view in yes_l:
         print(all_races)
-        race_view_choice = input("What race would you like to view? ")
+        race_view_choice = input("What race would you like to view? ").title()
         while race_view_choice not in all_races:
             print("Please choose a race listed below.")
             print(all_races)
-            race_view_choice = input("What race would you like to view? ")
+            race_view_choice = input("What race would you like to view? ").title()
         if race_view_choice == all_races[0]:
             dwarf_info()
         elif race_view_choice == all_races[1]:
@@ -89,3 +91,6 @@ def race_info():
             halfling_info()
         else:
             human_info()
+        race_info_view = input("Would you like to view another race? ").lower()
+        while race_info_view not in yes_l and race_info_view not in no_l:
+            race_info_view = input("Would you like to view another race? ").lower()

@@ -37,4 +37,3 @@ def mod_assign(score):
     else:
         score = 10
     modifier_output = score
-    print(modifier_output)

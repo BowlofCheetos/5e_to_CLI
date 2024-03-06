@@ -10,26 +10,26 @@ player_name()
 
 #score selection
 score_assign()
-print(str_score)
-print(dex_score)
-print(con_score)
-print(int_score)
-print(wis_score)
-print(cha_score)
+from score_assign import *
 
 #modifier generation
 mod_assign(str_score)
+from modifier_assign import modifier_output
 str_mod = modifier_output
-print(str_mod)
 mod_assign(dex_score)
+from modifier_assign import modifier_output
 dex_mod = modifier_output
 mod_assign(con_score)
+from modifier_assign import modifier_output
 con_mod = modifier_output
 mod_assign(int_score)
+from modifier_assign import modifier_output
 int_mod = modifier_output
 mod_assign(wis_score)
+from modifier_assign import modifier_output
 wis_mod = modifier_output
 mod_assign(cha_score)
+from modifier_assign import modifier_output
 cha_mod = modifier_output
 
 #race info
