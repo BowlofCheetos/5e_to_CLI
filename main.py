@@ -1,6 +1,7 @@
 from global_vars import *
 from player_intro import *
 from race_info import *
+from race_traits import *
 from score_assign import *
 from modifier_assign import *
 
@@ -34,5 +35,8 @@ cha_mod = modifier_output
 
 #race info
 race_info()
+from race_info import *
 
 #race traits
+race_selection()
+from race_traits import *
