@@ -3,7 +3,7 @@ from prettytable import PrettyTable
 
 #score selection
 def score_assign():
-    global str_score, dex_score, con_score, int_score, wis_score, cha_score, score_choice, starting_scores
+    global str_score, dex_score, con_score, int_score, wis_score, cha_score, score_choice
     standard_array = [15, 14, 13, 12, 10, 8]
     plr_scores = [str_score, dex_score, con_score, int_score, wis_score, cha_score]
     scores = ["STR", "DEX", "CON", "INT", "WIS", "CHA"]

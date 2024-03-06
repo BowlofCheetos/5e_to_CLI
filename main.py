@@ -10,10 +10,17 @@ player_name()
 
 #score selection
 score_assign()
+print(str_score)
+print(dex_score)
+print(con_score)
+print(int_score)
+print(wis_score)
+print(cha_score)
 
 #modifier generation
 mod_assign(str_score)
 str_mod = modifier_output
+print(str_mod)
 mod_assign(dex_score)
 dex_mod = modifier_output
 mod_assign(con_score)
