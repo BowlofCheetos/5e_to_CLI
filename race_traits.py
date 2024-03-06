@@ -82,13 +82,16 @@ def elf_traits():
         for x in wizard_cantrips:
             print(x.name)
         cantrip_choice = input("What cantrip do you choose? ").title()
-        while cantrip_choice not in wizard_cantrips:
+        while True:
+            matched_cantrip = next((x for x in wizard_cantrips if cantrip_choice == x.name), None)
+            if matched_cantrip is not None:
+                known_cantrips.append(matched_cantrip)
+                break
+            else:
+                print("That's not a valid cantrip. Please choose one of the following:")
             for x in wizard_cantrips:
                 print(x.name)
             cantrip_choice = input("What cantrip do you choose? ").title()
-        for x in wizard_cantrips:
-            if cantrip_choice == x.name:
-                known_cantrips.append(x)
         print(all_languages)
         extra_language = input("What language do you choose? ").title()
         while extra_language not in all_languages:
