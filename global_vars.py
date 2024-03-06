@@ -33,6 +33,9 @@ int_mod = modifier_base
 wis_mod = modifier_base
 cha_mod = modifier_base
 
+#player starting values
+player_hit_dice = base
+
 #saving throws
 proficient_saving_throws = []
 saving_throw_adv = []
