@@ -60,6 +60,7 @@ bard_level_1_spells = [animal_friendship, bane, charm_person, comprehend_languag
 #wizard
 #cantrips
 acid_splash = spell("Acid Splash", "A", True, 1, "DEX", 6, "Acid", None, False)
+blade_ward = spell("Blade Ward", "A", False, 1, None, None, None, "Resistance to bludgeoning, piercing, and slashing.", False)
 chill_touch = spell("Chill Touch", "A", True, 1, None, 8, "Necrotic", "Cannot regain hit points", False)
 dancing_lights = spell("Dancing Lights", "A", True, 10, None, None, None, "Creates lights", False)
 fire_bolt = spell("Fire Bolt", "A", True, 1, None, 10, "Fire", False, False)
@@ -72,4 +73,4 @@ minor_illusion = spell("Minor Illusion", "A", False, 1, None, None, None, "Creat
 prestidigitation = spell("Prestidigitation", "A", False, 600, None, None, None, "Perform simple magical effects", False)
 frost_ray = spell("Frost Ray", "A", True, 1, None, 8, "Cold", "Reduce speed by 10 feet", False)
 shocking_grasp = spell("Shocking Grasp", "A", False, 1, None, 8, "Lightning", "Target can't take reactions", False)
-wizard_cantrips = [acid_splash, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, prestidigitation, frost_ray, shocking_grasp]
+wizard_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, prestidigitation, frost_ray, shocking_grasp]
