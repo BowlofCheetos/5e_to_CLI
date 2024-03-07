@@ -1,5 +1,5 @@
 import random
-from skills import *
+from skill_check import *
 
 #global variables
 base = 0

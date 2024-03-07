@@ -4,7 +4,7 @@ from race_info import *
 from race_traits import *
 from score_assign import *
 from modifier_assign import *
-from skills import *
+from skill_check import *
 
 #introduction
 intro()

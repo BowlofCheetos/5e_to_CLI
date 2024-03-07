@@ -12,4 +12,3 @@ def barbarian_start():
     special_traits += "Rage", "Unarmored Defense"
     rage_count = 2
     rage_damage = 2
-    

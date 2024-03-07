@@ -15,3 +15,5 @@ def skill_check(skill, difficulty):
         else:
             print("You have failed the check.")
             skill_result = False
+
+skill_check(athletics, 10)
