@@ -127,6 +127,17 @@ seeming = spell("Seeming","A", True, 4800, True, None, None, "This spell allows 
 teleportation_circle = spell("Teleportation Circle", 1, True, 1, False, None, None, "Link your location to a permanent teleportation circle", False)
 bard__level_5_spells = [animate_objects, awaken, dominate_person, dream, geas, greater_restoration, hold_monster, legend_lore, mass_cure_wounds, mislead, modify_memory, planar_binding, raise_dead, scrying, seeming, teleportation_circle]
 
+#level_6
+eyebite = spell("Eyebite", "A", False, 1, True, None, None, "Your eyes become an inky void imbued with dread power", True)
+find_the_path = spell("Find the Path", 1, False, 14400, True, None, None, "This spell allows you to find the shortest, most direct physical route", True)
+guards_and_wards = spell("Guards and Wards", 10, True, 14400, False, None, None, "You create a ward that protects up to 2,500 square feet of floor space", False)
+mass_suggestion = spell("Mass Suggestion", "A", True, 14400, True, None, None, "You suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice", False)
+ottos_irresistible_dance = spell("Otto's Irresistible Dance", "A", True, 1, True, None, None, "A target begins a comic dance in place", True)
+programmed_illusion = spell("Programmed Illusion", "A", True, 1, False, None, None, "You create an illusion of an object, a creature, or some other visible phenomenon", False)
+true_seeing = spell("True Seeing", "A", False, 60, False, None, None, "This spell gives the willing creature you touch the ability to see things as they actually are", False)
+bard__level_6_spells = [eyebite, find_the_path, guards_and_wards, mass_suggestion, ottos_irresistible_dance, programmed_illusion, true_seeing]
+
+
 #cleric
 #cantrips
 
