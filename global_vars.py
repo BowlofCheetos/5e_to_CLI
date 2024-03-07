@@ -109,4 +109,3 @@ def lucky():
             reroll = input("Would you like to reroll using Lucky? ").lower()
         if reroll in yes_l:
             roll_result = d20()
-

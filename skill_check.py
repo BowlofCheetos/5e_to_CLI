@@ -1,6 +1,5 @@
-from global_vars import *
-
 def skill_check(skill, difficulty):
+    from global_vars import str_skills, d20, proficient_skills, str_mod, prof_bonus
     if skill in str_skills:
         d20()
         from global_vars import roll_result
