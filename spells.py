@@ -91,11 +91,22 @@ major_image = spell("Major Image", "A", True, 100, False, None, None, "You creat
 nondetection = spell("Nondetection", "A", False, 4800, False, None, None, "You hide a target that you touch from divination magic", False)
 plant_growth = spell("Plant Growth", "A", True, 1, False, None, None, "This spell channels vitality into plants within a specific area", False)
 sending = spell("Sending", "A", True, 1, False, None, None, "You send a short message of twenty-five words or less to a creature", False)
-speak_with_dead = spell("Speak with Dead", "A", True, 100, False, None, None "You grant the semblance of life and intelligence to a corpse of your choice", False)
+speak_with_dead = spell("Speak with Dead", "A", True, 100, False, None, None, "You grant the semblance of life and intelligence to a corpse of your choice", False)
 speak_with_plants = spell("Speak with Plants", "A", True, 100, False, None, None, "You imbue plants within 30 feet of you with limited sentience and animation", False)
 stinking_cloud = spell("Stinking Cloud", "A", True, 1, True, None, None, "You create a 20-foot-radius sphere of yellow, nauseating gas", True)
 tongues = spell("Tongues", "A", False, 600, False, None, None, "Grants the creature you touch the ability to understand any spoken language", False)
 bard_level_3_spells = [bestow_curse, clairvoyance, dispel_magic, fear, feign_death, glyth_of_warding, hypnotic_pattern, leomunds_tiny_hut, major_image, nondetection, plant_growth, sending, speak_with_dead, speak_with_plants, stinking_cloud, tongues]
+
+#level_4
+compulsion = spell("Compulsion", "A", True, 1, True, None, None, "A creature of your choice is affected by compulsion", True)
+confusion = spell("Confusion", "A", True, 1, True, None, None, "This spell assaults and twists creatures’ minds, spawning delusions and provoking uncontrolled actions.", True)
+dimension_door = spell("Dimension Door", "A", True, 1, False, 24, "Force", "You teleport yourself from your current location to any other spot within range", False)
+freedom_of_movement = spell("Freedom of Movement", "A", False, 600, False, None, None, "Unaffected by difficult terrain, and spells and other magical effects", False)
+greater_invisibility = spell("Greater Invisibility", "A", False, 1, False, None, None, "You or a creature you touch becomes invisible until the spell ends", True)
+hallucinatory_terrain = spell("Hallucinatory Terrain", "A", True, 14400, False, None, None, "You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain", False)
+locate_creature = spell("Locate Creature", "A", False, 600, False, None, None, "You sense the direction to a creature’s location", True)
+polymorph = spell("Polymorph", "A", True, 600, True, None, None, "This spell transforms a creature that you can see within range into a new form", True)
+bard_level_4_spells = [compulsion, confusion, dimension_door, freedom_of_movement, greater_invisibility, hallucinatory_terrain, locate_creature, polymorph]
 
 #cleric
 #cantrips
