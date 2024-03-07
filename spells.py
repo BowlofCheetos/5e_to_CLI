@@ -138,31 +138,31 @@ true_seeing = spell("True Seeing", "A", False, 60, False, None, None, "This spel
 bard__level_6_spells = [eyebite, find_the_path, guards_and_wards, mass_suggestion, ottos_irresistible_dance, programmed_illusion, true_seeing]
 
 #level_7
-etherealness = spell("Etherealness")
-forcecage = spell("Forcecage")
-mirage_arcane = spell("Mirage Arcane")
-mordenkainens_magnificient_mansion = spell("Mordenkainen's Magnificient Mansion")
-mordenkainens_sword = spell("Mordenkainen's Sword")
-project_image = spell("Project Image")
-regenerate = spell("Regenerate")
-resurrection = spell("Resurrection")
-symbol = spell("Symbol")
-teleport = spell("Teleport")
+etherealness = spell("Etherealness", "A", )
+forcecage = spell("Forcecage", "A", )
+mirage_arcane = spell("Mirage Arcane", 10, )
+mordenkainens_magnificient_mansion = spell("Mordenkainen's Magnificient Mansion", "A", )
+mordenkainens_sword = spell("Mordenkainen's Sword", "A", )
+project_image = spell("Project Image", "A", )
+regenerate = spell("Regenerate", "A", )
+resurrection = spell("Resurrection", 60, )
+symbol = spell("Symbol", "A", )
+teleport = spell("Teleport", "A", )
 bard__level_7_spells = [etherealness, forcecage, mirage_arcane, mordenkainens_magnificient_mansion, mordenkainens_sword, project_image, regenerate, resurrection, symbol, teleport]
 
 #level_8
-dominate_monster = spell("Dominate Monster")
-feeblemind = spell("Feeblemind")
-glibness = spell("Glibness")
-mind_blank = spell("Mind Blank")
-power_word_stun = spell("Power Word Stun")
+dominate_monster = spell("Dominate Monster", "A", )
+feeblemind = spell("Feeblemind", "A", )
+glibness = spell("Glibness", "A", )
+mind_blank = spell("Mind Blank", "A", )
+power_word_stun = spell("Power Word Stun", "A", )
 bard__level_8_spells = [dominate_monster, feeblemind, glibness, mind_blank, power_word_stun]
 
 #level_9
-foresight = spell("Foresight")
-power_word_heal = spell("Power Word Heal")
-power_word_kill = spell("Power Word Kill")
-true_polymorph = spell("True Polymorph")
+foresight = spell("Foresight", "A", )
+power_word_heal = spell("Power Word Heal", "A", )
+power_word_kill = spell("Power Word Kill", "A", )
+true_polymorph = spell("True Polymorph", "A", )
 bard__level_9_spells = [foresight, power_word_heal, power_word_kill, true_polymorph]
 
 #cleric
