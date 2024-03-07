@@ -85,18 +85,16 @@ dispel_magic = spell("Dispel Magic", "A", True, 1, True, None, None, "Choose any
 fear = spell("Fear", "A", False, 1, True, None, None, "You project a phantasmal image of a creature’s worst fears.", True)
 feign_death = spell("Feign Death", "A", False, 600, False, None, None, "You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.", False)
 glyth_of_warding = spell("Glyph of Warding", 600, False, 600, True, None, None, "When you cast this spell, you inscribe a glyph that creates a magical effect triggered by other creatures", False)
-
-hypnotic_pattern = spell("Hypnotic Pattern", "A", True, 1)
-leomunds_tiny_hut = spell("Leomund's Tiny Hut", 1, False, 4800)
-major_image = spell("Major Image", "A", True, 100)
-nondetection = spell("Nondetection", "A", False, 4800)
-plant_growth = spell("Plant Growth", "A", True, 1)
-
-sending = spell("Sending", "A", True, 1)
-speak_with_dead = spell("Speak with Dead", "A", True, 100)
-speak_with_plants = spell("Speak with Plants", "A", True, 100)
-stinking_cloud = spell("Stinking Cloud", "A", True, 1)
-tongues = spell("Tongues", "A", False, 600, )
+hypnotic_pattern = spell("Hypnotic Pattern", "A", True, 1, True, None, None, "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range", True)
+leomunds_tiny_hut = spell("Leomund's Tiny Hut", 1, False, 4800, False, None, None, "A 10-foot-radius immobile dome of force springs into existence", False)
+major_image = spell("Major Image", "A", True, 100, False, None, None, "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube", True)
+nondetection = spell("Nondetection", "A", False, 4800, False, None, None, "You hide a target that you touch from divination magic", False)
+plant_growth = spell("Plant Growth", "A", True, 1, False, None, None, "This spell channels vitality into plants within a specific area", False)
+sending = spell("Sending", "A", True, 1, False, None, None, "You send a short message of twenty-five words or less to a creature", False)
+speak_with_dead = spell("Speak with Dead", "A", True, 100, False, None, None "You grant the semblance of life and intelligence to a corpse of your choice", False)
+speak_with_plants = spell("Speak with Plants", "A", True, 100, False, None, None, "You imbue plants within 30 feet of you with limited sentience and animation", False)
+stinking_cloud = spell("Stinking Cloud", "A", True, 1, True, None, None, "You create a 20-foot-radius sphere of yellow, nauseating gas", True)
+tongues = spell("Tongues", "A", False, 600, False, None, None, "Grants the creature you touch the ability to understand any spoken language", False)
 bard_level_3_spells = [bestow_curse, clairvoyance, dispel_magic, fear, feign_death, glyth_of_warding, hypnotic_pattern, leomunds_tiny_hut, major_image, nondetection, plant_growth, sending, speak_with_dead, speak_with_plants, stinking_cloud, tongues]
 
 #cleric
