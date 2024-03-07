@@ -108,6 +108,25 @@ locate_creature = spell("Locate Creature", "A", False, 600, False, None, None, "
 polymorph = spell("Polymorph", "A", True, 600, True, None, None, "This spell transforms a creature that you can see within range into a new form", True)
 bard_level_4_spells = [compulsion, confusion, dimension_door, freedom_of_movement, greater_invisibility, hallucinatory_terrain, locate_creature, polymorph]
 
+#level_5
+animate_objects = spell("Animate Object","A", True, 1, False, None, None, "Objects come to life at your command.", True)
+awaken = spell("Awaken", 4800, False, 1, False, None, None, "The target gains an Intelligence of 10", False)
+dominate_person = spell("Dominate Person","A", True, 1, True, None, None, "You attempt to beguile a humanoid that you can see within range", True)
+dream = spell("Dream", 1, True, 4800, True, None, None, "This spell shapes a creature’s dreams.", False)
+geas = spell("Geas", 1, True, 1440000, True, 50, "Psychic", "You place a magical command on a creature", False)
+greater_restoration = spell("Greater Restoration","A", False, 1, False, None, None, "You imbue a creature you touch with positive energy to undo a debilitating effect", False)
+hold_monster = spell("Hold Monster","A", True, 1, True, None, None, "Choose a creature to paralyze", True)
+legend_lore = spell("Legend Lore", 10, False, 1, False, None, None, "The spell brings to your mind a brief summary of the significant lore", False)
+mass_cure_wounds = spell("Mass Cure Wounds","A", True, 1, False, None, None, "A wave of healing energy washes out ", False)
+mislead = spell("Mislead","A", False, 1, False, None, None, "You become invisible at the same time that an illusory double of you appears", True)
+modify_memory = spell("Modify Memory","A", True, 1, True, None, None, "You attempt to reshape another creature’s memories.", True)
+planar_binding = spell("Planar Binding", 60, True, 14400, True, None, None, "With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service", False)
+raise_dead = spell("Raise Dead","A", False, 1, False, None, None, "You return a dead creature you touch to life", False)
+scrying = spell("Scrying", 10, False, 10, True, None, None, "You can see and hear a particular creature you choose that is on the same plane of existence as you", True)
+seeming = spell("Seeming","A", True, 4800, True, None, None, "This spell allows you to change the appearance of any number of creatures", False)
+teleportation_circle = spell("Teleportation Circle", 1, True, 1, False, None, None, "Link your location to a permanent teleportation circle", False)
+bard__level_5_spells = [animate_objects, awaken, dominate_person, dream, geas, greater_restoration, hold_monster, legend_lore, mass_cure_wounds, mislead, modify_memory, planar_binding, raise_dead, scrying, seeming, teleportation_circle]
+
 #cleric
 #cantrips
 
