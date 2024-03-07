@@ -95,6 +95,9 @@ proficient_skills = []
 #known spells
 known_cantrips = []
 
+#player equipment
+player_weapons = []
+
 #special functions
 def d20():
     global roll_result
