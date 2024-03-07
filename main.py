@@ -42,3 +42,5 @@ from race_info import *
 #race traits
 race_selection()
 from race_traits import *
+
+skill_check(athletics, 10)
