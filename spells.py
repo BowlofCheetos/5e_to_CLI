@@ -138,31 +138,31 @@ true_seeing = spell("True Seeing", "A", False, 60, False, None, None, "This spel
 bard__level_6_spells = [eyebite, find_the_path, guards_and_wards, mass_suggestion, ottos_irresistible_dance, programmed_illusion, true_seeing]
 
 #level_7
-etherealness = spell("Etherealness", "A", )
-forcecage = spell("Forcecage", "A", )
-mirage_arcane = spell("Mirage Arcane", 10, )
-mordenkainens_magnificient_mansion = spell("Mordenkainen's Magnificient Mansion", "A", )
-mordenkainens_sword = spell("Mordenkainen's Sword", "A", )
-project_image = spell("Project Image", "A", )
-regenerate = spell("Regenerate", "A", )
-resurrection = spell("Resurrection", 60, )
-symbol = spell("Symbol", "A", )
-teleport = spell("Teleport", "A", )
+etherealness = spell("Etherealness", "A", False, 720, False, None, None, "You step into the border regions of the Ethereal Plane", False)
+forcecage = spell("Forcecage", "A", True, 60, True, None, None, "An immobile, invisible, cube-shaped prison composed of magical force springs into existence", False)
+mirage_arcane = spell("Mirage Arcane", 10, True, 14400, False, None, None, "You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain", False)
+mordenkainens_magnificient_mansion = spell("Mordenkainen's Magnificient Mansion", "A", True, 14400, False, None, None, "You conjure an extradimensional dwelling", False)
+mordenkainens_sword = spell("Mordenkainen's Sword", "A", True, 1, False, 30, "Force", "You create a sword-shaped plane of force that hovers within range", True)
+project_image = spell("Project Image", "A", True, 14400, False, None, None, "You create an illusory copy of yourself that lasts for the duration", True)
+regenerate = spell("Regenerate", "A", False, 60, False, None, None, "You touch a creature and stimulate its natural healing ability", False)
+resurrection = spell("Resurrection", 60, False, 1, False, None, None, "Target returns to life with all its hit points", False)
+symbol = spell("Symbol", "A", False, 1, True, None, None, "When you cast this spell, you inscribe a harmful glyph", False)
+teleport = spell("Teleport", "A", True, 1, False, None, None, "This spell instantly transports you and up to eight willing creatures of your choice", False)
 bard__level_7_spells = [etherealness, forcecage, mirage_arcane, mordenkainens_magnificient_mansion, mordenkainens_sword, project_image, regenerate, resurrection, symbol, teleport]
 
 #level_8
-dominate_monster = spell("Dominate Monster", "A", )
-feeblemind = spell("Feeblemind", "A", )
-glibness = spell("Glibness", "A", )
-mind_blank = spell("Mind Blank", "A", )
-power_word_stun = spell("Power Word Stun", "A", )
+dominate_monster = spell("Dominate Monster", "A", True, 60, True, None, None, "You attempt to beguile a creature that you can see within range", True)
+feeblemind = spell("Feeblemind", "A", True, 1, True, None, None, "You blast the mind of a creature that you can see within range", False)
+glibness = spell("Glibness", "A", False, 60, False, None, None, "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15", False)
+mind_blank = spell("Mind Blank", "A", False, 14400, False, None, None, "Until the spell ends, one willing creature you touch is immune to psychic damage", False)
+power_word_stun = spell("Power Word Stun", "A", True, 1, True, None, None, "You speak a word of power that can overwhelm the mind of one creature you can see within range", False)
 bard__level_8_spells = [dominate_monster, feeblemind, glibness, mind_blank, power_word_stun]
 
 #level_9
-foresight = spell("Foresight", "A", )
-power_word_heal = spell("Power Word Heal", "A", )
-power_word_kill = spell("Power Word Kill", "A", )
-true_polymorph = spell("True Polymorph", "A", )
+foresight = spell("Foresight", "A", False, 480, False, None, None, "You touch a willing creature and bestow a limited ability to see into the immediate future", False)
+power_word_heal = spell("Power Word Heal", "A", False, 1, False, None, None, "A wave of healing energy washes over a creature you touch.", False)
+power_word_kill = spell("Power Word Kill", "A", True, 1, False, 100, "Spell", "You utter a word of power that can kill instantly, 100hp or fewer", False)
+true_polymorph = spell("True Polymorph", "A", True, 60, True, None, None, "Transform the creature into a different creature, the creature into a nonmagical object, or the object into a creature", True)
 bard__level_9_spells = [foresight, power_word_heal, power_word_kill, true_polymorph]
 
 #cleric
