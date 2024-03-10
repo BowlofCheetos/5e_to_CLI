@@ -84,7 +84,7 @@ clairvoyance = spell("Clairvoyance", 10, True, 100, None, None, None, "You creat
 dispel_magic = spell("Dispel Magic", "A", True, 1, None, None, None, "Choose any creature, object, or magical effect within range to dispel", False)
 fear = spell("Fear", "A", False, 1, "WIS", None, None, "You project a phantasmal image of a creature’s worst fears.", True)
 feign_death = spell("Feign Death", "A", False, 600, None, None, None, "You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.", False)
-glyth_of_warding = spell("Glyph of Warding", 600, False, 600, "DEX", None, None, "When you cast this spell, you inscribe a glyph that creates a magical effect triggered by other creatures", False)
+glyph_of_warding = spell("Glyph of Warding", 600, False, 600, "DEX", None, None, "When you cast this spell, you inscribe a glyph that creates a magical effect triggered by other creatures", False)
 hypnotic_pattern = spell("Hypnotic Pattern", "A", True, 1, "WIS", None, None, "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range", True)
 leomunds_tiny_hut = spell("Leomund's Tiny Hut", 1, False, 4800, None, None, None, "A 10-foot-radius immobile dome of force springs into existence", False)
 major_image = spell("Major Image", "A", True, 100, None, None, None, "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube", True)
@@ -168,8 +168,6 @@ bard__level_9_spells = [foresight, power_word_heal, power_word_kill, true_polymo
 #cleric
 #cantrips
 guidance = spell("Guidance", "A", False, 1, None, None, None, " Roll a d4 and add to one ability check", True)
-light 
-mending
 resistance = spell("Resistance", "A", False, 1, None, None, None, "Roll d4 and add to one saving throw", True)
 sacred_flame = spell("Sacred Flame", "A", True, 1, "DEX", 8, "Radiant", "Flame-like radiance descends on a creature", False)
 spare_the_dying = spell("Spare the Dying", "A", False, 1, None, None, None, "Creature at 0hp becomes stable", False)
@@ -177,22 +175,94 @@ thaumaturgy = spell("Thaumaturgy", "A", True, 1, None, None, None, "You manifest
 cleric_cantrips = [guidance, light, mending, resistance, sacred_flame, spare_the_dying, thaumaturgy]
 
 #level_1
-bane
 bless = spell("Bless", "A", True, 1, None, None, None, "You bless up to three creatures", True)
 command = spell("Command", "A", True, 1, "WIS", None, None, "You speak a one-word command to a creature", False)
 create_or_destroy_water = spell("Create or Destroy Water", "A", True, 1, None, None, None, "You either create or destroy water.", False)
-cure_wounds
 detect_evil_and_good = spell("Detect Evil and Good", "A", True, 10, None, None, None, "You detect aberrations, celestials, elementals, fey, fiends, or undead within 30ft", True)
-detect_magic
 detect_poison_and_disease = spell("Detect Poison and Disease", "A", True, 10, None, None, None, "Sense poisons, poisonous creatures, and diseases", True)
 guiding_bolt = spell("Guiding Bolt", "A", True, 1, None, 24, "Radiant", "A flash of light streaks toward a creature of your choice", False)
-healing_word
 inflict_wounds = spell("Inflict Wounds", "A", False, 1, None, 30, "Necrotic", "On a hit deal necrotic damage", False)
 protection_from_evil_and_good = spell("Protection from Evil and Good", "A", False, 10, None, None, None, "Protected against aberrations, celestials, elementals, fey, fiends, and undead", True)
 purify_food_and_drink = spell("Purify Food and Drink", "A", True, 1, None, None, None,"All nonmagical food and drink is purified", False)
 sanctuary = spell("Santuary", "B", True, 1, "WIS", None, None, "You ward a creature within range against attack", False)
 shield_of_faith = spell("Shield of Faith", "B", True, 10, None, None, None, "A shimmering field appears and surrounds a creature", True)
 cleric_level_1_spells = [bane, bless, command, create_or_destroy_water, cure_wounds, detect_evil_and_good, detect_magic, detect_poison_and_disease, guiding_bolt, healing_word, inflict_wounds, protection_from_evil_and_good, purify_food_and_drink, sanctuary, shield_of_faith]
+
+#level_2
+augury = spell("")
+continual_flame = spell("")
+find_traps = spell("")
+gentle_repose = spell("")
+prayer_of_healing = spell("")
+protection_from_poison = spell("")
+spiritual_weapon = spell("")
+warding_bond = spell("")
+cleric_level_2_spells = [aid, augury, blindness_deafness, calm_emotions, continual_flame, enhance_ability, find_traps, gentle_repose, hold_person, lesser_restoration, locate_object, prayer_of_healing, protection_from_poison, silence, spiritual_weapon, warding_bond, zone_of_truth]
+
+#level_3
+animate_dead = spell("")
+beacon_of_hope = spell("")
+create_food_and_water = spell("")
+daylight = spell("")
+magic_circle = spell("")
+mass_healing_word = spell("")
+meld_into_stone = spell("")
+protection_from_energy = spell("")
+remove_curse = spell("")
+revivify = spell("")
+spirit_guardians = spell("")
+water_walk = spell("")
+cleric_level_3_spells = [animate_dead, beacon_of_hope, bestow_curse, clairvoyance, create_food_and_water, daylight, dispel_magic, feign_death, glyph_of_warding, magic_circle, mass_healing_word, meld_into_stone, protection_from_energy, remove_curse, revivify, sending, speak_with_dead]
+
+#level_4
+banishment = spell("")
+control_water = spell("")
+death_ward = spell("")
+divination = spell("")
+guardian_of_faith = spell("")
+stone_shape = spell("")
+cleric_level_4_spells = [banishment, control_water, death_ward, divination, guardian_of_faith, stone_shape]
+
+#level_5
+commune = spell("")
+contagion = spell("")
+dispel_evil_and_good = spell("")
+flame_strike = spell("")
+hallow = spell("")
+insect_plague = spell("")
+cleric_level_5_spells = [commune, contagion, dispel_evil_and_good, flame_strike, geas, greater_restoration, hallow, insect_plague, legend_lore, mass_cure_wounds, planar_binding, raise_dead, scrying]
+
+#level_6
+blade_barrier = spell("")
+create_undead = spell("")
+forbiddence = spell("")
+harm = spell("")
+heal = spell("")
+heroes_feast = spell("")
+planar_ally = spell("")
+word_of_recall = spell("")
+cleric_level_6_spells = [blade_barrier, create_undead, find_the_path, forbiddence, harm, heal, heroes_feast, planar_ally, true_seeing, word_of_recall]
+
+#level_7
+conjure_celestial = spell("")
+divine_word = spell("")
+fire_storm = spell("")
+plane_shift = spell("")
+cleric_level_7_spells = [conjure_celestial, divine_word, etherealness, fire_storm, plane_shift, regenerate, resurrection, symbol]
+
+#level_8
+antimagic_field = spell("")
+control_weather = spell("")
+earthquake = spell("")
+holy_aura = spell("")
+cleric_level_8_spells = [antimagic_field, control_weather, earthquake, holy_aura]
+
+#level_9
+astral_projection = spell("")
+gate = spell("")
+mass_heal = spell("")
+true_resurrection = spell("")
+cleric_level_9_spells = [astral_projection, gate, mass_heal, true_resurrection]
 
 #druid
 #cantrips
