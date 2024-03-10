@@ -266,6 +266,194 @@ cleric_level_9_spells = [astral_projection, gate, mass_heal, true_resurrection]
 
 #druid
 #cantrips
+druidcraft = spell()
+poison_spray = spell()
+produce_flame = spell()
+shillelagh = spell()
+thorn_whip = spell()
+druid_cantrips = [druidcraft, guidance, mending, poison_spray, produce_flame, resistance, shillelagh, thorn_whip]
+
+#level_1
+entangle = spell()
+fog_cloud = spell()
+goodberry = spell()
+jump = spell()
+druid_level_1_spells = [animal_friendship, charm_person, create_or_destroy_water, cure_wounds, detect_magic, detect_poison_and_disease, entangle, faerie_fire, fog_cloud, goodberry, healing_word, jump, longstrider, purify_food_and_drink, speak_with_animals, thunderwave]
+
+#level_2
+barkskin = spell()
+beast_sense = spell()
+darkvision = spell()
+flame_blade = spell()
+flaming_sphere = spell()
+gust_of_wind = spell()
+moonbeam = spell()
+pass_without_trace = spell()
+spike_growth = spell()
+druid_level_2_spells = [animal_messenger, beast_sense, darkvision, enhance_ability, find_traps, flame_blade, flaming_sphere, gust_of_wind, heat_metal, hold_person, lesser_restoration, locate_animals_or_plants, locate_object, moonbeam, pass_without_trace, protection_from_poison, spike_growth]
+
+#level_3
+call_lightning = spell()
+conjure_animals = spell()
+sleet_storm = spell()
+water_breathing = spell()
+wind_wall = spell()
+druid_level_3_spells = [call_lightning, conjure_animals, daylight, dispel_magic, feign_death, meld_into_stone, plant_growth, protection_from_energy, sleet_storm, speak_with_plants, water_breathing, water_walk, wind_wall]
+
+#level_4
+blight = spell()
+conjure_minor_elementals = spell()
+conjure_woodland_beings = spell()
+dominate_beast = spell()
+giant_insect = spell()
+grasping_vine = spell()
+ice_storm = spell()
+stoneskin = spell()
+wall_of_fire = spell()
+druid_level_4_spells = [blight, confusion, conjure_minor_elementals, conjure_woodland_beings, control_water, dominate_beast, freedom_of_movement, giant_insect, grasping_vine, hallucinatory_terrain, ice_storm, locate_creature, polymorph, stone_shape, stoneskin, wall_of_fire]
+
+#level_5
+antilife_shell = spell()
+commune_with_nature = spell()
+conjure_elemental = spell()
+reincarnate = spell()
+tree_stride = spell()
+wall_of_stone = spell()
+druid_level_5_spells = [antilife_shell, awaken, commune_with_nature, conjure_elemental, contagion, geas, greater_restoration, insect_plague, mass_cure_wounds, planar_binding, reincarnate, scrying, tree_stride, wall_of_stone]
+
+#level_6
+conjure_fey = spell()
+move_earth = spell()
+sunbeam = spell()
+transport_via_plants = spell()
+wall_of_thorns = spell()
+wind_walk = spell()
+druid_level_6_spells = [conjure_fey, find_the_path, heal, heroes_feast, move_earth, sunbeam, transport_via_plants, wall_of_thorns, wind_walk]
+
+#level_7
+reverse_gravity = spell()
+druid_level_7_spells = [fire_storm, mirage_arcane, plane_shift, regenerate, reverse_gravity]
+
+#level_8
+animal_shapes = spell()
+antipathy_sympathy = spell()
+control_weather = spell()
+sunburst = spell()
+tsunami = spell()
+druid_level_8_spells = [animal_shapes, antipathy_sympathy, control_weather, earthquake, feeblemind, sunburst, tsunami]
+
+#level_9
+shapechange = spell("")
+storm_of_vengeance = spell("")
+druid_level_9_spells = [foresight, shapechange, storm_of_vengeance, true_resurrection]
+
+#ranger
+
+#level_1
+alarm = spell("")
+ensnaring_strike = spell("")
+hail_of_thorns = spell("")
+hunters_mark = spell("")
+ranger_level_1_spells = [alarm, animal_friendship, cure_wounds, detect_magic, detect_poison_and_disease, ensnaring_strike, fog_cloud, goodberry, hail_of_thorns, hunters_mark, jump, longstrider, speak_with_animals]
+
+#level_2
+cordon_of_arrows = spell("")
+ranger_level_2_spells = [animal_messenger, barkskin, beast_sense, cordon_of_arrows, darkvision, find_traps, lesser_restoration, locate_animals_or_plants, locate_object, pass_without_trace, protection_from_poison, silence, spike_growth]
+
+#level_3
+conjure_barrage = spell("")
+lightning_arrow = spell("")
+ranger_level_3_spells = [conjure_animals, conjure_barrage, daylight, lightning_arrow, nondetection, plant_growth, protection_from_energy, speak_with_plants, water_breathing, water_walk, wind_wall]
+
+#level_4
+ranger_level_4_spells = [conjure_woodland_beings, freedom_of_movement, grasping_vine, locate_creature, stoneskin]
+
+#level_5
+conjure_volley = spell("")
+swift_quiver = spell("")
+ranger_level_5_spells = [commune_with_nature, conjure_volley, swift_quiver, tree_stride]
+
+#paladin
+#level_1
+paladin_level_1_spells = []
+
+#sorcerer
+#cantrips
+sorcerer_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, poison_spray, prestidigitation, ray_of_frost, shocking_grasp, true_strike]
+
+#level_1
+burning_hands = spell("")
+chromatic_orb = spell ("")
+color_spray = spell ("")
+expeditious_retreat = spell ("")
+false_life = spell ("")
+mage_armor = spell ("")
+magic_missile = spell ("")
+ray_of_sickness = spell ("")
+shield = spell ("")
+witch_bolt = spell ("")
+sorcerer_level_1_spells = [burning_hands, charm_person, chromatic_orb, color_spray, comprehend_languages, detect_magic, disguise_self, expeditious_retreat, false_life, feather_fall, fog_cloud, jump, mage_armor, magic_missile, ray_of_sickness, shield, silent_image, sleep, thunderwave, witch_bolt]
+
+#level_2
+alter_self = spell ("")
+blur = spell ("")
+darkness = spell ("")
+enlarge_reduce = spell ("")
+levitate = spell ("")
+mirror_image = spell ("")
+misty_step = spell ("")
+scorching_ray = spell ("")
+spider_climb = spell ("")
+web = spell ("")
+sorcerer_level_2_spells = [alter_self, blindness_deafness, blur, cloud_of_daggers, crown_of_madness, darkness, darkvision, detect_thoughts, enhance_ability, enlarge_reduce, gust_of_wind, hold_person, invisibility, knock, levitate, mirror_image, misty_step, phantasmal_force, scorching_ray, see_invisibility, shatter, spider_climb, suggestion, web]
+
+#level_3
+blink = spell ("")
+counterspell = spell ("")
+fireball = spell ("")
+fly = spell ("")
+gaseous_form = spell ("")
+haste = spell ("")
+lightning_bolt = spell ("")
+slow = spell ("")
+sorcerer_level_3_spells = [blink, clairvoyance, counterspell, daylight, dispel_magic, fear, fireball, fly, gaseous_form, haste, hypnotic_pattern, lightning_bolt, major_image, protection_from_energy, sleet_storm, slow, stinking_cloud, tongues, water_breathing, water_walk]
+
+#level_4
+sorcerer_level_4_spells = [banishment, blight, confusion, dimension_door, dominate_beast, greater_invisibility, ice_storm, polymorph, stoneskin, wall_of_fire]
+
+#level_5
+cloudkill = spell("")
+cone_of_cold = spell("")
+creation = spell("")
+telekinesis = spell("")
+sorcerer_level_5_spells = [animate_objects, cloudkill, cone_of_cold, creation, dominate_person, hold_monster, insect_plague, seeming, telekinesis, teleportation_circle, wall_of_stone]
+
+#level_6
+arcane_gate = spell("")
+chain_lightning = spell("")
+circle_of_death = spell("")
+disintegrate = spell("")
+globe_of_invulnerability = spell("")
+sorcerer_level_6_spells = [arcane_gate, chain_lightning, circle_of_death, disintegrate, eyebite, globe_of_invulnerability, mass_suggestion, move_earth, sunbeam, true_seeing]
+
+#level_7
+delayed_blast_fireball = spell("")
+finger_of_death = spell("")
+prismatic_spray = spell("")
+sorcerer_level_7_spells = [delayed_blast_fireball, etherealness, finger_of_death, fire_storm, plane_shift, prismatic_spray, reverse_gravity, teleport]
+
+#level_8
+incendiary_cloud = spell("")
+sorcerer_level_8_spells = [dominate_monster, earthquake, incendiary_cloud, power_word_stun, sunburst]
+
+#level_9
+meteor_swarm = spell("")
+time_stop = spell("")
+wish = spell("")
+sorcerer_level_9_spells = [gate, meteor_swarm, power_word_kill, time_stop, wish]
+
+#warlock
+#cantrips
 
 #wizard
 #cantrips
