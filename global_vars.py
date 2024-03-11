@@ -6,12 +6,14 @@ base = 0
 score_base = 8
 modifier_base = -1
 prof_bonus = 2
+player_gold = 0
 
 #global lists
 yes_l = ['yes', 'y']
 no_l = ['no', 'n']
 all_languages = ['Dwarvish', 'Elvish', 'Giant', 'Gnomish', 'Goblin', 'Goblin', 'Halfling', 'Orc']
 player_classes = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
+player_inventory = []
 
 #race lists
 all_races = ['Dwarf', 'Elf', 'Halfling', 'Human',]
