@@ -5,6 +5,7 @@ from race_traits import *
 from score_assign import *
 from modifier_assign import *
 from skill_check import *
+from backgrounds import *
 
 #introduction
 intro()
