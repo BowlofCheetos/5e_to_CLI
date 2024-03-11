@@ -95,7 +95,7 @@ speak_with_dead = spell("Speak with Dead", "A", True, 100, None, None, None, "Yo
 speak_with_plants = spell("Speak with Plants", "A", True, 100, None, None, None, "You imbue plants within 30 feet of you with limited sentience and animation", False)
 stinking_cloud = spell("Stinking Cloud", "A", True, 1, "CON", None, None, "You create a 20-foot-radius sphere of yellow, nauseating gas", True)
 tongues = spell("Tongues", "A", False, 600, None, None, None, "Grants the creature you touch the ability to understand any spoken language", False)
-bard_level_3_spells = [bestow_curse, clairvoyance, dispel_magic, fear, feign_death, glyth_of_warding, hypnotic_pattern, leomunds_tiny_hut, major_image, nondetection, plant_growth, sending, speak_with_dead, speak_with_plants, stinking_cloud, tongues]
+bard_level_3_spells = [bestow_curse, clairvoyance, dispel_magic, fear, feign_death, glyph_of_warding, hypnotic_pattern, leomunds_tiny_hut, major_image, nondetection, plant_growth, sending, speak_with_dead, speak_with_plants, stinking_cloud, tongues]
 
 #level_4
 compulsion = spell("Compulsion", "A", True, 1, "WIS", None, None, "A creature of your choice is affected by compulsion", True)
@@ -379,7 +379,12 @@ paladin_level_1_spells = []
 
 #sorcerer
 #cantrips
-sorcerer_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, poison_spray, prestidigitation, ray_of_frost, shocking_grasp, true_strike]
+acid_splash = spell("Acid Splash", "A", True, 1, "DEX", 6, "Acid", None, False)
+chill_touch = spell("Chill Touch", "A", True, 1, None, 8, "Necrotic", "Cannot regain hit points", False)
+fire_bolt = spell("Fire Bolt", "A", True, 1, None, 10, "Fire", False, False)
+frost_ray = spell("Frost Ray", "A", True, 1, None, 8, "Cold", "Reduce speed by 10 feet", False)
+shocking_grasp = spell("Shocking Grasp", "A", False, 1, None, 8, "Lightning", "Target can't take reactions", False)
+sorcerer_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, poison_spray, prestidigitation, frost_ray, shocking_grasp, true_strike]
 
 #level_1
 burning_hands = spell("")
