@@ -95,7 +95,7 @@ speak_with_dead = spell("Speak with Dead", "A", True, 100, None, None, None, "Yo
 speak_with_plants = spell("Speak with Plants", "A", True, 100, None, None, None, "You imbue plants within 30 feet of you with limited sentience and animation", False)
 stinking_cloud = spell("Stinking Cloud", "A", True, 1, "CON", None, None, "You create a 20-foot-radius sphere of yellow, nauseating gas", True)
 tongues = spell("Tongues", "A", False, 600, None, None, None, "Grants the creature you touch the ability to understand any spoken language", False)
-bard_level_3_spells = [bestow_curse, clairvoyance, dispel_magic, fear, feign_death, glyth_of_warding, hypnotic_pattern, leomunds_tiny_hut, major_image, nondetection, plant_growth, sending, speak_with_dead, speak_with_plants, stinking_cloud, tongues]
+bard_level_3_spells = [bestow_curse, clairvoyance, dispel_magic, fear, feign_death, glyph_of_warding, hypnotic_pattern, leomunds_tiny_hut, major_image, nondetection, plant_growth, sending, speak_with_dead, speak_with_plants, stinking_cloud, tongues]
 
 #level_4
 compulsion = spell("Compulsion", "A", True, 1, "WIS", None, None, "A creature of your choice is affected by compulsion", True)
@@ -189,79 +189,79 @@ shield_of_faith = spell("Shield of Faith", "B", True, 10, None, None, None, "A s
 cleric_level_1_spells = [bane, bless, command, create_or_destroy_water, cure_wounds, detect_evil_and_good, detect_magic, detect_poison_and_disease, guiding_bolt, healing_word, inflict_wounds, protection_from_evil_and_good, purify_food_and_drink, sanctuary, shield_of_faith]
 
 #level_2
-augury = spell("")
-continual_flame = spell("")
-find_traps = spell("")
-gentle_repose = spell("")
-prayer_of_healing = spell("")
-protection_from_poison = spell("")
-spiritual_weapon = spell("")
-warding_bond = spell("")
+augury = spell("Augury")
+continual_flame = spell("Continual Flame")
+find_traps = spell("Find Traps")
+gentle_repose = spell("Gentle Repose")
+prayer_of_healing = spell("Prayer of Healing")
+protection_from_poison = spell("Protection from Poison")
+spiritual_weapon = spell("Spiritual Weapon")
+warding_bond = spell("Warding Bond")
 cleric_level_2_spells = [aid, augury, blindness_deafness, calm_emotions, continual_flame, enhance_ability, find_traps, gentle_repose, hold_person, lesser_restoration, locate_object, prayer_of_healing, protection_from_poison, silence, spiritual_weapon, warding_bond, zone_of_truth]
 
 #level_3
-animate_dead = spell("")
-beacon_of_hope = spell("")
-create_food_and_water = spell("")
-daylight = spell("")
-magic_circle = spell("")
-mass_healing_word = spell("")
-meld_into_stone = spell("")
-protection_from_energy = spell("")
-remove_curse = spell("")
-revivify = spell("")
-spirit_guardians = spell("")
-water_walk = spell("")
+animate_dead = spell("Animate Dead")
+beacon_of_hope = spell("Beacon of Hope")
+create_food_and_water = spell("Create Food and Water")
+daylight = spell("Daylight")
+magic_circle = spell("Magic Circle")
+mass_healing_word = spell("Mass Healing Word")
+meld_into_stone = spell("Meld Into Stone")
+protection_from_energy = spell("Protection from Energy")
+remove_curse = spell("Remove Curce")
+revivify = spell("Revivify")
+spirit_guardians = spell("Spirit Guardians")
+water_walk = spell("Water Walk")
 cleric_level_3_spells = [animate_dead, beacon_of_hope, bestow_curse, clairvoyance, create_food_and_water, daylight, dispel_magic, feign_death, glyph_of_warding, magic_circle, mass_healing_word, meld_into_stone, protection_from_energy, remove_curse, revivify, sending, speak_with_dead]
 
 #level_4
-banishment = spell("")
-control_water = spell("")
-death_ward = spell("")
-divination = spell("")
-guardian_of_faith = spell("")
-stone_shape = spell("")
+banishment = spell("Banishment")
+control_water = spell("Control Water")
+death_ward = spell("Death Ward")
+divination = spell("Divination")
+guardian_of_faith = spell("Guardian of Faith")
+stone_shape = spell("Stone Shape")
 cleric_level_4_spells = [banishment, control_water, death_ward, divination, guardian_of_faith, stone_shape]
 
 #level_5
-commune = spell("")
-contagion = spell("")
-dispel_evil_and_good = spell("")
-flame_strike = spell("")
-hallow = spell("")
-insect_plague = spell("")
+commune = spell("Commune")
+contagion = spell("Contagion")
+dispel_evil_and_good = spell("Dispel Evil and Good")
+flame_strike = spell("Flame Strike")
+hallow = spell("Hallow")
+insect_plague = spell("Insect Plague")
 cleric_level_5_spells = [commune, contagion, dispel_evil_and_good, flame_strike, geas, greater_restoration, hallow, insect_plague, legend_lore, mass_cure_wounds, planar_binding, raise_dead, scrying]
 
 #level_6
-blade_barrier = spell("")
-create_undead = spell("")
-forbiddence = spell("")
-harm = spell("")
-heal = spell("")
-heroes_feast = spell("")
-planar_ally = spell("")
-word_of_recall = spell("")
+blade_barrier = spell("Blade Barrier")
+create_undead = spell("Create Undead")
+forbiddence = spell("Forbiddence")
+harm = spell("Harm")
+heal = spell("Heal")
+heroes_feast = spell("Heroes Feast")
+planar_ally = spell("Planar Ally")
+word_of_recall = spell("Word of Recall")
 cleric_level_6_spells = [blade_barrier, create_undead, find_the_path, forbiddence, harm, heal, heroes_feast, planar_ally, true_seeing, word_of_recall]
 
 #level_7
-conjure_celestial = spell("")
-divine_word = spell("")
-fire_storm = spell("")
-plane_shift = spell("")
+conjure_celestial = spell("Conjure Celestial")
+divine_word = spell("Divine Word")
+fire_storm = spell("Fire Storm")
+plane_shift = spell("Plane Shift")
 cleric_level_7_spells = [conjure_celestial, divine_word, etherealness, fire_storm, plane_shift, regenerate, resurrection, symbol]
 
 #level_8
-antimagic_field = spell("")
-control_weather = spell("")
-earthquake = spell("")
-holy_aura = spell("")
+antimagic_field = spell("Antimagic Field")
+control_weather = spell("Control Weather")
+earthquake = spell("Earthquake")
+holy_aura = spell("Holy Aura")
 cleric_level_8_spells = [antimagic_field, control_weather, earthquake, holy_aura]
 
 #level_9
-astral_projection = spell("")
-gate = spell("")
-mass_heal = spell("")
-true_resurrection = spell("")
+astral_projection = spell("Astral Projection")
+gate = spell("Gate")
+mass_heal = spell("Mass Heal")
+true_resurrection = spell("True Ressurection")
 cleric_level_9_spells = [astral_projection, gate, mass_heal, true_resurrection]
 
 #druid
@@ -379,6 +379,11 @@ paladin_level_1_spells = []
 
 #sorcerer
 #cantrips
+acid_splash = spell("Acid Splash", "A", True, 1, "DEX", 6, "Acid", None, False)
+chill_touch = spell("Chill Touch", "A", True, 1, None, 8, "Necrotic", "Cannot regain hit points", False)
+fire_bolt = spell("Fire Bolt", "A", True, 1, None, 10, "Fire", False, False)
+ray_of_frost = spell("Ray of Frost", "A", True, 1, None, 8, "Cold", "Reduce speed by 10 feet", False)
+shocking_grasp = spell("Shocking Grasp", "A", False, 1, None, 8, "Lightning", "Target can't take reactions", False)
 sorcerer_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, poison_spray, prestidigitation, ray_of_frost, shocking_grasp, true_strike]
 
 #level_1
@@ -457,8 +462,6 @@ sorcerer_level_9_spells = [gate, meteor_swarm, power_word_kill, time_stop, wish]
 
 #wizard
 #cantrips
-acid_splash = spell("Acid Splash", "A", True, 1, "DEX", 6, "Acid", None, False)
-chill_touch = spell("Chill Touch", "A", True, 1, None, 8, "Necrotic", "Cannot regain hit points", False)
 dancing_lights = spell("Dancing Lights", "A", True, 10, None, None, None, "Creates lights", False)
 fire_bolt = spell("Fire Bolt", "A", True, 1, None, 10, "Fire", False, False)
 friends = spell("Friends", "A", False, 10, None, None, None, "Advantage on all Charisma checks", False)
@@ -468,6 +471,4 @@ mending = spell("Mending", "A", False, 1, None, None, None, "Repair a break or t
 message = spell("Message", "A", True, 1, None, None, None, "Send a short message", False)
 minor_illusion = spell("Minor Illusion", "A", False, 1, None, None, None, "Create a sound or an image", False)
 prestidigitation = spell("Prestidigitation", "A", False, 600, None, None, None, "Perform simple magical effects", False)
-ray_of_frost = spell("Ray of Frost", "A", True, 1, None, 8, "Cold", "Reduce speed by 10 feet", False)
-shocking_grasp = spell("Shocking Grasp", "A", False, 1, None, 8, "Lightning", "Target can't take reactions", False)
 wizard_cantrips = [acid_splash, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, prestidigitation, ray_of_frost, shocking_grasp]
