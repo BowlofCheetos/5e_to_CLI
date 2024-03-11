@@ -1,4 +1,5 @@
 import random
+from skill_check import *
 
 #global variables
 base = 0
@@ -10,12 +11,40 @@ prof_bonus = 2
 yes_l = ['yes', 'y']
 no_l = ['no', 'n']
 all_languages = ['Dwarvish', 'Elvish', 'Giant', 'Gnomish', 'Goblin', 'Goblin', 'Halfling', 'Orc']
+player_classes = ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
 
 #race lists
 all_races = ['Dwarf', 'Elf', 'Halfling', 'Human',]
 dwarf_subraces = ['Hill', 'Mountain']
 elf_subraces = ['High', 'Wood', 'Drow']
 halfling_subraces = ['Lightfoot', 'Stout']
+
+#skill list
+athletics = 'Athletics'
+acrobatics = 'Acrobatics'
+arcana = 'Arcana'
+animal_handling = 'Animal Handling'
+deception = 'Deception'
+history = 'History'
+insight = 'Insight'
+intimidation = 'Intimidation'
+investigation = 'Investigation'
+medicine = 'Medicine'
+nature = 'Nature'
+perception = 'Perception'
+performance = 'Performance'
+persuasion = 'Persuasion'
+religion = 'Religion'
+sleight_of_hand = 'Sleight of Hand'
+stealth = 'Stealth'
+survival = 'Survival'
+
+#skills by score
+str_skills = [athletics]
+dex_skills = [acrobatics, sleight_of_hand, stealth]
+int_skills = [arcana, history, investigation, nature, religion]
+wis_skills = [animal_handling, insight, medicine, perception, survival]
+cha_skills = [deception, performance, persuasion]
 
 #player starting scores
 str_score = score_base
@@ -32,6 +61,11 @@ con_mod = modifier_base
 int_mod = modifier_base
 wis_mod = modifier_base
 cha_mod = modifier_base
+
+#player starting values
+player_level = 1
+player_hit_dice = base
+player_class = base
 
 #saving throws
 proficient_saving_throws = []
@@ -60,6 +94,9 @@ proficient_skills = []
 
 #known spells
 known_cantrips = []
+
+#player equipment
+player_weapons = []
 
 #special functions
 def d20():

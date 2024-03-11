@@ -7,8 +7,7 @@ from prettytable import PrettyTable
 #dwarf traits
 def dwarf_traits():
     global con_score, special_traits, proficient_saving_throws, damage_resistance, known_languages, wis_score, dwarven_toughness, player_race, player_subrace, str_score, proficient_armor, proficient_weapons
-    #base traits
-    player_race = "Dwarf"
+    player_race = all_races[0]
     con_score += 2
     proficient_weapons += battleaxe, handaxe, light_hammer, warhammer
     special_traits += "Darkvision", "Stonecunning"
@@ -44,7 +43,8 @@ def dwarf_traits():
 
 #elf traits
 def elf_traits():
-    global dex_score, int_score, proficient_weapons, player_subrace, known_languages, known_cantrips, wis_score, cha_score
+    global dex_score, int_score, proficient_weapons, player_subrace, known_languages, known_cantrips, wis_score, cha_score, player_race
+    player_race = all_races[1]
     dex_score += 2
     special_traits.append("Darkvision")
     proficient_skills.append("Perception")
@@ -82,22 +82,25 @@ def elf_traits():
         for x in wizard_cantrips:
             print(x.name)
         cantrip_choice = input("What cantrip do you choose? ").title()
-        while cantrip_choice not in wizard_cantrips:
+        while True:
+            matched_cantrip = next((x for x in wizard_cantrips if cantrip_choice == x.name), None)
+            if matched_cantrip is not None:
+                known_cantrips.append(matched_cantrip)
+                break
+            else:
+                print("That's not a valid cantrip. Please choose one of the following:")
             for x in wizard_cantrips:
                 print(x.name)
             cantrip_choice = input("What cantrip do you choose? ").title()
-        for x in wizard_cantrips:
-            if cantrip_choice == x.name:
-                known_cantrips.append(x)
         print(all_languages)
-        extra_language = input("What language do you choose? ")
+        extra_language = input("What language do you choose? ").title()
         while extra_language not in all_languages:
             print(all_languages)
-            extra_language = input("What language do you choose? ")
+            extra_language = input("What language do you choose? ").title()
         while extra_language == all_languages[1]:
-            print("You already known Elvish, choose another.")
+            print("You already known Elvish, choose another.").title()
             print(all_languages)
-            extra_language = input("What language do you choose? ")
+            extra_language = input("What language do you choose? ").title()
         known_languages.append(extra_language)
         player_subrace = "High Elf"
     elif subrace_choice == elf_subraces[1]:
@@ -114,7 +117,8 @@ def elf_traits():
 
 #halfling traits
 def halfling_traits():
-    global dex_score, cha_score, player_subrace, con_score
+    global dex_score, cha_score, player_subrace, con_score, player_race
+    player_race = all_races[2]
     dex_score += 2
     special_traits.append("Lucky")
     saving_throw_adv.append("Frightened")
@@ -149,7 +153,8 @@ def halfling_traits():
 
 #human traits
 def human_traits():
-    global str_score, dex_score, con_score, int_score, wis_score, cha_score
+    global str_score, dex_score, con_score, int_score, wis_score, cha_score, player_race
+    player_race = all_races[3]
     str_score += 1
     dex_score += 1
     con_score += 1
@@ -157,8 +162,24 @@ def human_traits():
     wis_score += 1
     cha_score += 1
     print(all_languages)
-    extra_language = input("What language do you choose? ")
+    extra_language = input("What language do you choose? ").title()
     while extra_language not in all_languages:
         print(all_languages)
-        extra_language = input("What language do you choose? ")
+        extra_language = input("What language do you choose? ").title()
     known_languages.append(extra_language)
+
+#race selection
+def race_selection():
+    print(all_races)
+    player_race_choice = input("What race would you like to choose? ").title()
+    while player_race_choice not in all_races:
+        print("Please choose an available race.")
+        player_race_choice = input("What race would you like to choose? ").title()
+    if player_race_choice == all_races[0]:
+        dwarf_traits()
+    elif player_race_choice == all_races[1]:
+        elf_traits()
+    elif player_race_choice == all_races[2]:
+        halfling_traits()
+    else:
+        human_traits()

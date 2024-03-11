@@ -382,9 +382,9 @@ paladin_level_1_spells = []
 acid_splash = spell("Acid Splash", "A", True, 1, "DEX", 6, "Acid", None, False)
 chill_touch = spell("Chill Touch", "A", True, 1, None, 8, "Necrotic", "Cannot regain hit points", False)
 fire_bolt = spell("Fire Bolt", "A", True, 1, None, 10, "Fire", False, False)
-ray_of_frost = spell("Ray of Frost", "A", True, 1, None, 8, "Cold", "Reduce speed by 10 feet", False)
+frost_ray = spell("Frost Ray", "A", True, 1, None, 8, "Cold", "Reduce speed by 10 feet", False)
 shocking_grasp = spell("Shocking Grasp", "A", False, 1, None, 8, "Lightning", "Target can't take reactions", False)
-sorcerer_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, poison_spray, prestidigitation, ray_of_frost, shocking_grasp, true_strike]
+sorcerer_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, poison_spray, prestidigitation, frost_ray, shocking_grasp, true_strike]
 
 #level_1
 burning_hands = spell("")
@@ -462,6 +462,9 @@ sorcerer_level_9_spells = [gate, meteor_swarm, power_word_kill, time_stop, wish]
 
 #wizard
 #cantrips
+acid_splash = spell("Acid Splash", "A", True, 1, "DEX", 6, "Acid", None, False)
+blade_ward = spell("Blade Ward", "A", False, 1, None, None, None, "Resistance to bludgeoning, piercing, and slashing.", False)
+chill_touch = spell("Chill Touch", "A", True, 1, None, 8, "Necrotic", "Cannot regain hit points", False)
 dancing_lights = spell("Dancing Lights", "A", True, 10, None, None, None, "Creates lights", False)
 fire_bolt = spell("Fire Bolt", "A", True, 1, None, 10, "Fire", False, False)
 friends = spell("Friends", "A", False, 10, None, None, None, "Advantage on all Charisma checks", False)
@@ -471,4 +474,6 @@ mending = spell("Mending", "A", False, 1, None, None, None, "Repair a break or t
 message = spell("Message", "A", True, 1, None, None, None, "Send a short message", False)
 minor_illusion = spell("Minor Illusion", "A", False, 1, None, None, None, "Create a sound or an image", False)
 prestidigitation = spell("Prestidigitation", "A", False, 600, None, None, None, "Perform simple magical effects", False)
-wizard_cantrips = [acid_splash, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, prestidigitation, ray_of_frost, shocking_grasp]
+frost_ray = spell("Frost Ray", "A", True, 1, None, 8, "Cold", "Reduce speed by 10 feet", False)
+shocking_grasp = spell("Shocking Grasp", "A", False, 1, None, 8, "Lightning", "Target can't take reactions", False)
+wizard_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, prestidigitation, frost_ray, shocking_grasp]
