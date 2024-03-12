@@ -43,3 +43,7 @@ from race_info import *
 #race traits
 race_selection()
 from race_traits import *
+
+#background selection
+bkgrnd_choice()
+from backgrounds import *
