@@ -98,7 +98,7 @@ def elf_traits():
             print(all_languages)
             extra_language = input("What language do you choose? ").title()
         while extra_language == all_languages[1]:
-            print("You already known Elvish, choose another.").title()
+            print("You already known Elvish, choose another.")
             print(all_languages)
             extra_language = input("What language do you choose? ").title()
         known_languages.append(extra_language)

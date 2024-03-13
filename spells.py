@@ -457,8 +457,8 @@ time_stop = spell("")
 wish = spell("")
 sorcerer_level_9_spells = [gate, meteor_swarm, power_word_kill, time_stop, wish]
 
-#warlock
-#cantrips
+# #warlock
+# #cantrips
 
 #wizard
 #cantrips
