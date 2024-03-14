@@ -28,10 +28,10 @@ def dwarf_traits():
         dwarf_subrace_feature_table.add_row(["Mountain", "Dwarven Armor Training", "You have proficiency with light and medium armor."])
         print(dwarf_subrace_feature_table)
     print(dwarf_subraces)
-    subrace_choice = input("What subrace would you like to be? ").title()
+    subrace_choice = input("What subrace would you like to be? ").strip().title()
     while subrace_choice not in dwarf_subraces:
         print(dwarf_subraces)
-        subrace_choice = input("What subrace would you like to be? ").title()
+        subrace_choice = input("What subrace would you like to be? ").strip().title()
     if subrace_choice == dwarf_subraces[0]:
         wis_score += 1
         dwarven_toughness = 1
@@ -71,17 +71,17 @@ def elf_traits():
         elf_subrace_feature_table.add_row(["Drow", "Drow Weapon Training", "You have proficiency with rapiers, shortswords, and hand crossbows."])
         print(elf_subrace_feature_table)
     print(elf_subraces)
-    subrace_choice = input("What subrace would you like to be? ").title()
+    subrace_choice = input("What subrace would you like to be? ").strip().title()
     while subrace_choice not in elf_subraces:
         print(elf_subraces)
-        subrace_choice = input("What subrace would you like to be? ").title()
+        subrace_choice = input("What subrace would you like to be? ").strip().title()
     if subrace_choice == elf_subraces[0]:
         int_score += 1
         proficient_weapons += longsword, longbow, shortsword, shortbow
         player_subrace = "High Elf"
         for x in wizard_cantrips:
             print(x.name)
-        cantrip_choice = input("What cantrip do you choose? ").title()
+        cantrip_choice = input("What cantrip do you choose? ").strip().title()
         while True:
             matched_cantrip = next((x for x in wizard_cantrips if cantrip_choice == x.name), None)
             if matched_cantrip is not None:
@@ -91,16 +91,16 @@ def elf_traits():
                 print("That's not a valid cantrip. Please choose one of the following:")
             for x in wizard_cantrips:
                 print(x.name)
-            cantrip_choice = input("What cantrip do you choose? ").title()
+            cantrip_choice = input("What cantrip do you choose? ").strip().title()
         print(all_languages)
-        extra_language = input("What language do you choose? ").title()
+        extra_language = input("What language do you choose? ").strip().title()
         while extra_language not in all_languages:
             print(all_languages)
-            extra_language = input("What language do you choose? ").title()
+            extra_language = input("What language do you choose? ").strip().title()
         while extra_language == all_languages[1]:
-            print("You already known Elvish, choose another.").title()
+            print("You already known Elvish, choose another.")
             print(all_languages)
-            extra_language = input("What language do you choose? ").title()
+            extra_language = input("What language do you choose? ").strip().title()
         known_languages.append(extra_language)
         player_subrace = "High Elf"
     elif subrace_choice == elf_subraces[1]:
@@ -137,10 +137,10 @@ def halfling_traits():
         halfling_subrace_feature_table.add_row(["Stout", "Stout Resilience", "You have advantage on saving throws against poison, and you have resistance to poison damage."])
         print(halfling_subrace_feature_table)
     print(halfling_subraces)
-    subrace_choice = input("What subrace would you like to be? ").title()
+    subrace_choice = input("What subrace would you like to be? ").strip().title()
     while subrace_choice not in halfling_subraces:
         print(halfling_subraces)
-        subrace_choice = input("What subrace would you like to be? ").title()
+        subrace_choice = input("What subrace would you like to be? ").strip().title()
     if subrace_choice == halfling_subraces[0]:
         cha_score += 1
         special_traits.append("Naturally Stealthy")
@@ -162,19 +162,19 @@ def human_traits():
     wis_score += 1
     cha_score += 1
     print(all_languages)
-    extra_language = input("What language do you choose? ").title()
+    extra_language = input("What language do you choose? ").strip().title()
     while extra_language not in all_languages:
         print(all_languages)
-        extra_language = input("What language do you choose? ").title()
+        extra_language = input("What language do you choose? ").strip().title()
     known_languages.append(extra_language)
 
 #race selection
 def race_selection():
     print(all_races)
-    player_race_choice = input("What race would you like to choose? ").title()
+    player_race_choice = input("What race would you like to choose? ").strip().title()
     while player_race_choice not in all_races:
         print("Please choose an available race.")
-        player_race_choice = input("What race would you like to choose? ").title()
+        player_race_choice = input("What race would you like to choose? ").strip().title()
     if player_race_choice == all_races[0]:
         dwarf_traits()
     elif player_race_choice == all_races[1]:
