@@ -12,11 +12,11 @@ def acolyte_bkgrnd():
             extra_language = input("What is the second language you choose? ").strip().title()
         while extra_language not in all_languages:
             print(all_languages)
-            extra_language = input("What language do you choose? ").title()
+            extra_language = input("What language do you choose? ").strip().title()
         while extra_language in known_languages:
             print("Please choose a language that you do not know.")
             print(all_languages)
-            extra_language = input("What language do you choose? ").title()
+            extra_language = input("What language do you choose? ").strip().title()
         known_languages.append(extra_language)
         iteration += 1
     player_gold += 15
@@ -55,14 +55,14 @@ def hermit_bkgrnd():
     player_inventory.append("Herbalism Kit")
     player_gold += 5
     print(all_languages)
-    extra_language = input("What language do you choose? ").title()
+    extra_language = input("What language do you choose? ").strip().title()
     while extra_language not in all_languages:
         print(all_languages)
-        extra_language = input("What language do you choose? ").title()
+        extra_language = input("What language do you choose? ").strip().title()
     while extra_language in known_languages:
         print("Please choose a language that you do not know.")
         print(all_languages)
-        extra_language = input("What language do you choose? ").title()
+        extra_language = input("What language do you choose? ").strip().title()
     known_languages.append(extra_language)
 
 def noble_bkgrnd():
@@ -70,14 +70,14 @@ def noble_bkgrnd():
     proficient_skills += history, persuasion
     player_gold += 25
     print(all_languages)
-    extra_language = input("What language do you choose? ").title()
+    extra_language = input("What language do you choose? ").strip().title()
     while extra_language not in all_languages:
         print(all_languages)
-        extra_language = input("What language do you choose? ").title()
+        extra_language = input("What language do you choose? ").strip().title()
     while extra_language in known_languages:
         print("Please choose a language that you do not know.")
         print(all_languages)
-        extra_language = input("What language do you choose? ").title()
+        extra_language = input("What language do you choose? ").strip().title()
     known_languages.append(extra_language)
     special_traits.append("Position of Privilege")
 
@@ -86,14 +86,14 @@ def outlander_bkgrnd():
     proficient_skills += athletics, survival
     player_gold += 10
     print(all_languages)
-    extra_language = input("What language do you choose? ").title()
+    extra_language = input("What language do you choose? ").strip().title()
     while extra_language not in all_languages:
         print(all_languages)
-        extra_language = input("What language do you choose? ").title()
+        extra_language = input("What language do you choose? ").strip().title()
     while extra_language in known_languages:
         print("Please choose a language that you do not know.")
         print(all_languages)
-        extra_language = input("What language do you choose? ").title()
+        extra_language = input("What language do you choose? ").strip().title()
     known_languages.append(extra_language)
     special_traits.append("Wanderer")   
 
@@ -109,11 +109,11 @@ def sage_bkgrnd():
             extra_language = input("What is the second language you choose? ").strip().title()
         while extra_language not in all_languages:
             print(all_languages)
-            extra_language = input("What language do you choose? ").title()
+            extra_language = input("What language do you choose? ").strip().title()
         while extra_language in known_languages:
             print("Please choose a language that you do not know.")
             print(all_languages)
-            extra_language = input("What language do you choose? ").title()
+            extra_language = input("What language do you choose? ").strip().title()
         known_languages.append(extra_language)
         iteration += 1
     special_traits.append("Researcher")
