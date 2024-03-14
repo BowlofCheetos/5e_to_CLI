@@ -4,5 +4,5 @@ def intro():
 
 #player_name
 def player_name():
-    player_name = input("What is your name traveler? ").title()
+    player_name = input("What is your name traveler? ").strip().title()
     print("Welcome to the Forgotten Realms " + player_name + "!")
