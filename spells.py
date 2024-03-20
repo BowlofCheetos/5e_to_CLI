@@ -189,47 +189,47 @@ shield_of_faith = spell("Shield of Faith", "B", True, 10, None, None, None, "A s
 cleric_level_1_spells = [bane, bless, command, create_or_destroy_water, cure_wounds, detect_evil_and_good, detect_magic, detect_poison_and_disease, guiding_bolt, healing_word, inflict_wounds, protection_from_evil_and_good, purify_food_and_drink, sanctuary, shield_of_faith]
 
 #level_2
-augury = spell("Augury")
-continual_flame = spell("Continual Flame")
-find_traps = spell("Find Traps")
-gentle_repose = spell("Gentle Repose")
-prayer_of_healing = spell("Prayer of Healing")
-protection_from_poison = spell("Protection from Poison")
-spiritual_weapon = spell("Spiritual Weapon")
-warding_bond = spell("Warding Bond")
+augury = spell("Augury", "R", False, 1, None, None, None, "Receive an omen", False)
+continual_flame = spell("Continual Flame", "A", False, 1, None, None, None, "A flame  springs forth from an object you touch", False)
+find_traps = spell("Find Traps", "A", True, 1, None, None, None, "You sense the presence of any trap within range", False)
+gentle_repose = spell("Gentle Repose", "A", False, 144000, None, None, None, "You touch a corpse and protect from decay", False)
+prayer_of_healing = spell("Prayer of Healing", 10, True, 1, None, None, None, "Up to six creatures of your choice regain hp", False)
+protection_from_poison = spell("Protection from Poison", "A", False, 60, None, None, None, "If poisoned, you neutralize poison", False)
+spiritual_weapon = spell("Spiritual Weapon", "B", 60, 1, None, 8, "Force", "You create a floating, spectral weapon", False)
+warding_bond = spell("Warding Bond", "A", False, 60, None, None, None, "This spell wards a willing creature you touch", False)
 cleric_level_2_spells = [aid, augury, blindness_deafness, calm_emotions, continual_flame, enhance_ability, find_traps, gentle_repose, hold_person, lesser_restoration, locate_object, prayer_of_healing, protection_from_poison, silence, spiritual_weapon, warding_bond, zone_of_truth]
 
 #level_3
-animate_dead = spell("Animate Dead")
-beacon_of_hope = spell("Beacon of Hope")
-create_food_and_water = spell("Create Food and Water")
-daylight = spell("Daylight")
-magic_circle = spell("Magic Circle")
-mass_healing_word = spell("Mass Healing Word")
-meld_into_stone = spell("Meld Into Stone")
-protection_from_energy = spell("Protection from Energy")
-remove_curse = spell("Remove Curce")
-revivify = spell("Revivify")
-spirit_guardians = spell("Spirit Guardians")
-water_walk = spell("Water Walk")
+animate_dead = spell("Animate Dead", "A", True, 1, None, None, None, "This spell creates an undead servant", False)
+beacon_of_hope = spell("Beacon of Hope", "A", True, 1, None, None, None, "This spell bestows hope and vitality.", True)
+create_food_and_water = spell("Create Food and Water", "A", True, 1, None, None, None, "You create 45 pounds of food and 30 gallons of water", False)
+daylight = spell("Daylight", "A", True, 60, None, None, None, "A 60-foot-radius sphere of light spreads out", False)
+magic_circle = spell("Magic Circle", "A", True, 60, "CHA", None, None, "You create a cylinder of magical energy", False)
+mass_healing_word = spell("Mass Healing Word", "B", True, 1, None, None, None, " You call out words of restoration to six creatures", False)
+meld_into_stone = spell("Meld Into Stone", "A", False, 4800, None, None, None, "You step into a stone object or surface large enough to fully contain your body", False)
+protection_from_energy = spell("Protection from Energy", "A", False, 60, None, None, None, "A willing creature you touch has resistance to one damage type", True)
+remove_curse = spell("Remove Curse", "A", False, 1, None, None, None, "At your touch, all curses affecting one creature or object end.", False)
+revivify = spell("Revivify", "A", False, 1, None, None, None, "Touch a creature that died within the last minute and it returns to life", False)
+spirit_guardians = spell("Spirit Guardians", "A", True, 10, "WIS", 24, "Radiant or Necrotic", "You call forth spirits to protect you", True)
+water_walk = spell("Water Walk", "A", True, 60, None, None, None, "Grants the ability to move across any liquid surface", False)
 cleric_level_3_spells = [animate_dead, beacon_of_hope, bestow_curse, clairvoyance, create_food_and_water, daylight, dispel_magic, feign_death, glyph_of_warding, magic_circle, mass_healing_word, meld_into_stone, protection_from_energy, remove_curse, revivify, sending, speak_with_dead]
 
 #level_4
-banishment = spell("Banishment")
-control_water = spell("Control Water")
-death_ward = spell("Death Ward")
-divination = spell("Divination")
-guardian_of_faith = spell("Guardian of Faith")
-stone_shape = spell("Stone Shape")
+banishment = spell("Banishment", "A", True, 1, "CHA", None, None, "Attempt to send a creature to another plane of existence", True)
+control_water = spell("Control Water", "A", True, 10, "STR", 16, "Bludgeon", "Until the spell ends, you control any freestanding water", True)
+death_ward = spell("Death Ward", "A", False, 480, None, None, None, "You touch a creature and grant it a measure of protection from death.", False)
+divination = spell("Divination", "A", False, 1, None, None, None, "Your magic and an offering put you in contact with a god or a god's servants", False)
+guardian_of_faith = spell("Guardian of Faith", "A", True, 480, "DEX", 20, "Radiant", "A Large spectral guardian appears", False)
+stone_shape = spell("Stone Shape", "A", False, 1, None, None, None,"You touch a stone object and form it into any shape that suits your purpose", False)
 cleric_level_4_spells = [banishment, control_water, death_ward, divination, guardian_of_faith, stone_shape]
 
 #level_5
-commune = spell("Commune")
-contagion = spell("Contagion")
-dispel_evil_and_good = spell("Dispel Evil and Good")
-flame_strike = spell("Flame Strike")
-hallow = spell("Hallow")
-insect_plague = spell("Insect Plague")
+commune = spell("Commune", "A", False, 1, None, None, None, "You contact your deity or a divine proxy and ask up to three questions", False)
+contagion = spell("Contagion", "A", False, 100800, "CON", None, None, "Your touch inflicts disease", False)
+dispel_evil_and_good = spell("Dispel Evil and Good", "A", False, 1, "CHA", None, None, "Shimmering energy surrounds and protects you", True)
+flame_strike = spell("Flame Strike", "A", True, 1, "DEX", 48, "Fire and Radiant", "A vertical column of divine fire roars down from the heavens", False)
+hallow = spell("Hallow", 1440, True, 1, "CHA", None, None ,"You touch a point and infuse an area around it with holy (or unholy) power", False)
+insect_plague = spell("Insect Plague", "A", True, 10, "CON", 40, "Pierce", "Locusts fill a 20-foot-radius sphere centered on a point", True)
 cleric_level_5_spells = [commune, contagion, dispel_evil_and_good, flame_strike, geas, greater_restoration, hallow, insect_plague, legend_lore, mass_cure_wounds, planar_binding, raise_dead, scrying]
 
 #level_6
