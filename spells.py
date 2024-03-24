@@ -233,35 +233,35 @@ insect_plague = spell("Insect Plague", "A", True, 10, "CON", 40, "Pierce", "Locu
 cleric_level_5_spells = [commune, contagion, dispel_evil_and_good, flame_strike, geas, greater_restoration, hallow, insect_plague, legend_lore, mass_cure_wounds, planar_binding, raise_dead, scrying]
 
 #level_6
-blade_barrier = spell("Blade Barrier")
-create_undead = spell("Create Undead")
-forbiddence = spell("Forbiddence")
-harm = spell("Harm")
-heal = spell("Heal")
-heroes_feast = spell("Heroes Feast")
-planar_ally = spell("Planar Ally")
-word_of_recall = spell("Word of Recall")
+blade_barrier = spell("Blade Barrier", "A", True, 10, "DEX", 60, "Slashing", "You create a vertical wall of whirling, razor-sharp blades made of magical energy.", True)
+create_undead = spell("Create Undead", "A", True, 1, None, None, None, "Choose up to three corpses of Medium or Small humanoids to become a ghoul under your control", False)
+forbiddence = spell("Forbiddence", "R", True, 1480, None, 50, "Radiant or Necrotic", "You create a ward against magical travel that protects up to 40,000 square feet of floor space", False)
+harm = spell("Harm", "A", True, 1, "CON", 84, "Necrotic", "You unleash a virulent disease on a creature", False)
+heal = spell("Heal", "A", True, 1, None, None, None, "A surge of positive energy washes through the creature, causing it to regain 70 hit points", False)
+heroes_feast = spell("Heroes' Feast", 10, True, 1, None, None, None, "You bring forth a great feast, including magnificent food and drink.", False)
+planar_ally = spell("Planar Ally", 10, True, 1, None, None, None, "You beseech an otherworldly entity for aid.", False)
+word_of_recall = spell("Word of Recall", "A", True, 1, None, None, None, "You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary.", False)
 cleric_level_6_spells = [blade_barrier, create_undead, find_the_path, forbiddence, harm, heal, heroes_feast, planar_ally, true_seeing, word_of_recall]
 
 #level_7
-conjure_celestial = spell("Conjure Celestial")
-divine_word = spell("Divine Word")
-fire_storm = spell("Fire Storm")
-plane_shift = spell("Plane Shift")
+conjure_celestial = spell("Conjure Celestial", "A", True, 60, None, None, None, "You summon a celestial of challenge rating 4 or lower", True)
+divine_word = spell("Divine Word", "B", True, 1, "CHA", False, False, "You utter a divine word, imbued with the power that shaped the world at the dawn of creation.", False)
+fire_storm = spell("Fire Storm", "A", True, 1, "DEX", 70, "Fire", "A storm made up of sheets of roaring flame appears", False)
+plane_shift = spell("Plane Shift", "A", False, 1, "CHA", None, None, "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence.", False)
 cleric_level_7_spells = [conjure_celestial, divine_word, etherealness, fire_storm, plane_shift, regenerate, resurrection, symbol]
 
 #level_8
-antimagic_field = spell("Antimagic Field")
-control_weather = spell("Control Weather")
-earthquake = spell("Earthquake")
-holy_aura = spell("Holy Aura")
+antimagic_field = spell("Antimagic Field","A", True, 60, None, None, None, "A 10-foot-radius invisible sphere of antimagic surrounds you.", True)
+control_weather = spell("Control Weather", 10, True, 480, None, None, None, "You take control of the weather within 5 miles of you for the duration.", True)
+earthquake = spell("Earthquake", "A", True, 1, "DEX", 50, "Bludgeoning", "You create a seismic disturbance at a point on the ground", True)
+holy_aura = spell("Holy Aura", "A", True, 1, "CON", None, None, "Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you", True)
 cleric_level_8_spells = [antimagic_field, control_weather, earthquake, holy_aura]
 
 #level_9
-astral_projection = spell("Astral Projection")
-gate = spell("Gate")
-mass_heal = spell("Mass Heal")
-true_resurrection = spell("True Ressurection")
+astral_projection = spell("Astral Projection", 60, True, 1, None, None, None, "You and up to eight willing creatures within range project your astral bodies into the Astral Plane", False)
+gate = spell("Gate", "A", True, 1, None, None, None, "You conjure a portal linking an unoccupied space you can see within range", True)
+mass_heal = spell("Mass Heal", "A", True, 1, None, None, None, "A flood of 700hp healing energy flows from you into injured creatures around you. ", False)
+true_resurrection = spell("True Resurrection", 60, False, 1, None, None, None, "You touch a creature that has been dead for no longer than 200 years and restore it to life with all its hit points.", False)
 cleric_level_9_spells = [astral_projection, gate, mass_heal, true_resurrection]
 
 #druid
@@ -373,10 +373,6 @@ conjure_volley = spell("")
 swift_quiver = spell("")
 ranger_level_5_spells = [commune_with_nature, conjure_volley, swift_quiver, tree_stride]
 
-#paladin
-#level_1
-paladin_level_1_spells = []
-
 #sorcerer
 #cantrips
 acid_splash = spell("Acid Splash", "A", True, 1, "DEX", 6, "Acid", None, False)
@@ -457,9 +453,6 @@ time_stop = spell("")
 wish = spell("")
 sorcerer_level_9_spells = [gate, meteor_swarm, power_word_kill, time_stop, wish]
 
-# #warlock
-# #cantrips
-
 #wizard
 #cantrips
 acid_splash = spell("Acid Splash", "A", True, 1, "DEX", 6, "Acid", None, False)
@@ -477,3 +470,9 @@ prestidigitation = spell("Prestidigitation", "A", False, 600, None, None, None, 
 frost_ray = spell("Frost Ray", "A", True, 1, None, 8, "Cold", "Reduce speed by 10 feet", False)
 shocking_grasp = spell("Shocking Grasp", "A", False, 1, None, 8, "Lightning", "Target can't take reactions", False)
 wizard_cantrips = [acid_splash, blade_ward, chill_touch, dancing_lights, fire_bolt, friends, light, mage_hand, mending, message, minor_illusion, prestidigitation, frost_ray, shocking_grasp]
+
+#paladin
+#level_1
+
+# #warlock
+# #cantrips
