@@ -266,85 +266,85 @@ cleric_level_9_spells = [astral_projection, gate, mass_heal, true_resurrection]
 
 #druid
 #cantrips
-druidcraft = spell()
-poison_spray = spell()
-produce_flame = spell()
-shillelagh = spell()
-thorn_whip = spell()
+druidcraft = spell("Druidcraft", "A", True, 1, None, None, None, "Creation with spirits of nature", False)
+poison_spray = spell("Poison Spray", "A", True, 1, "CON", 12, "Poison", "Project a puff of noxious gas from your palm", False)
+produce_flame = spell("Produce Flame", "A", False, 10, None, 8, "Fire", "A flickering flame appears in your hand.", False)
+shillelagh = spell("Shillelagh", "B", False, 1, None, 8, "Bludgeoning", "The wood of a club or quarterstaff you are holding is imbued with nature's power.", False)
+thorn_whip = spell("Thorn Whip", "A", True, 1, False, 6, "Piercing", "You create a long, vine-like whip covered in thorns that lashes out at your command", False)
 druid_cantrips = [druidcraft, guidance, mending, poison_spray, produce_flame, resistance, shillelagh, thorn_whip]
 
 #level_1
-entangle = spell()
-fog_cloud = spell()
-goodberry = spell()
-jump = spell()
+entangle = spell("Entangle", "A", True, 1, "STR", None, None, "Grasping weeds and vines sprout from the ground", True)
+fog_cloud = spell("Fog Cloud", "A", True, 60, None, None, None, "You create a 20-foot-radius sphere of fog", True)
+goodberry = spell("Goodberry", "A", False, 1, None, None, None, "Up to ten berries appear in your hand and are infused with magic for the duration", False)
+jump = spell("Jump", "A", False, 1, None, None, None, "Jump distance is tripled until the spell ends.", False)
 druid_level_1_spells = [animal_friendship, charm_person, create_or_destroy_water, cure_wounds, detect_magic, detect_poison_and_disease, entangle, faerie_fire, fog_cloud, goodberry, healing_word, jump, longstrider, purify_food_and_drink, speak_with_animals, thunderwave]
 
 #level_2
-barkskin = spell()
-beast_sense = spell()
-darkvision = spell()
-flame_blade = spell()
-flaming_sphere = spell()
-gust_of_wind = spell()
-moonbeam = spell()
-pass_without_trace = spell()
-spike_growth = spell()
+barkskin = spell("Barkskin", "A", False, 60, None, None, None, "A target's skin has a rough, bark-like appearance", True)
+beast_sense = spell("Beast Sense", "A", True, 60, None, None, None, "You touch a willing beast to see through their eyes and hear what they hear", True)
+darkvision = spell("Darkvision", "A", False, 480, None, None, None, "You touch a willing creature to grant it the ability to see in the dark.", False)
+flame_blade = spell("Flame Blade", "B", False, 10, None, 18, "Fire", "You evoke a fiery blade in your free hand.", True)
+flaming_sphere = spell("Flaming Sphere", "A", True, 1, "DEX", 12, "Fire", "A 5-foot-diameter sphere of fire appears in an unoccupied space", True)
+gust_of_wind = spell("Gust of Wind", "A", False, 1, "STR", None, None, "A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction", True)
+moonbeam = spell("Moonbeam", "A", True, 1, "CON", 20, "Radiant", "A silvery beam of pale light shines down ", True)
+pass_without_trace = spell("Pass Without Trace", "A", False, 60, None, None, None, "A veil of shadows and silence radiates from you", True)
+spike_growth = spell("Spike Growth", "A", True, 10, None, 8, "Piercing", "Centered on a point on the ground, it twists and sprouts hard spikes and thorns.", True)
 druid_level_2_spells = [animal_messenger, beast_sense, darkvision, enhance_ability, find_traps, flame_blade, flaming_sphere, gust_of_wind, heat_metal, hold_person, lesser_restoration, locate_animals_or_plants, locate_object, moonbeam, pass_without_trace, protection_from_poison, spike_growth]
 
 #level_3
-call_lightning = spell()
-conjure_animals = spell()
-sleet_storm = spell()
-water_breathing = spell()
-wind_wall = spell()
+call_lightning = spell("Call Lightning", "A", True, 10, "DEX", 30, "Lightning", "A storm cloud appears in the shape of a cylinder ", True)
+conjure_animals = spell("Conjure Animals", "A", True, 60, None, None, None, "You summon fey spirits that take the form of beasts", True)
+sleet_storm = spell("Sleet Storm", "A", True, 1, "DEX", None, None, "Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius", True)
+water_breathing = spell("Water Breathing", "A", True, 1440, None, None, None, "This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends.", False)
+wind_wall = spell("Wind Wall", "A", True, 1, "STR", 24, "Bludgeoning", "A wall of strong wind rises from the ground", True)
 druid_level_3_spells = [call_lightning, conjure_animals, daylight, dispel_magic, feign_death, meld_into_stone, plant_growth, protection_from_energy, sleet_storm, speak_with_plants, water_breathing, water_walk, wind_wall]
 
 #level_4
-blight = spell()
-conjure_minor_elementals = spell()
-conjure_woodland_beings = spell()
-dominate_beast = spell()
-giant_insect = spell()
-grasping_vine = spell()
-ice_storm = spell()
-stoneskin = spell()
-wall_of_fire = spell()
+blight = spell("Blight", )
+conjure_minor_elementals = spell("Conjue Minor Elementals", "A", True, 60, None, None, None, "You summon elementals that appear in unoccupied spaces that you can see within range.", True)
+conjure_woodland_beings = spell("Conjure Woodland Beings", "A", True, 60, None, None ,None, "You summon fey creatures that appear in unoccupied spaces that you can see within range. ", True)
+dominate_beast = spell("Dominate Beast", "A", True, 1, "WIS", None, None, "You attempt to beguile a beast that you can see within range.", True)
+giant_insect = spell("Giant Insect", "A", True, 10, None, None, None, "You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms", True)
+grasping_vine = spell("Grasping Vine", "B", True, 1, "DEX", None, None, "You conjure a vine that sprouts from the ground", True)
+ice_storm = spell("Ice Storm", "A", True, 1, "DEX", 16 or 24, "Bludgeoning and Cold","A hail of rock-hard ice pounds to the ground",False )
+stoneskin = spell("Stoneskin", "A", False, 60, None, None, None, "This spell turns the flesh of a willing creature you touch as hard as stone.", True)
+wall_of_fire = spell("Wall of Fire", "A", True, 1, "DEX", 40, "Fire", "You create a wall of fire on a solid surface within range.", True)
 druid_level_4_spells = [blight, confusion, conjure_minor_elementals, conjure_woodland_beings, control_water, dominate_beast, freedom_of_movement, giant_insect, grasping_vine, hallucinatory_terrain, ice_storm, locate_creature, polymorph, stone_shape, stoneskin, wall_of_fire]
 
 #level_5
-antilife_shell = spell()
-commune_with_nature = spell()
-conjure_elemental = spell()
-reincarnate = spell()
-tree_stride = spell()
-wall_of_stone = spell()
+antilife_shell = spell("Antilife Shell", "A", True, 60, None, None ,None, "The barrier prevents an affected creature from passing or reaching through.", True)
+commune_with_nature = spell("Commune with Nature", "A", False, 1, None, None, None, "You briefly become one with nature and gain knowledge of the surrounding territory.", False)
+conjure_elemental = spell("Conjure Elemental", "A", True, 60, None, None, None, "You call forth an elemental servant.", True)
+reincarnate = spell("Reincarnate", 60, False, 1, None, None, None, "You touch and reincarnate a dead humanoid or a piece of a dead humanoid. ", False)
+tree_stride = spell("Tree Stride", "A", False, 1, None, None, None, "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind", True)
+wall_of_stone = spell("Wall of Stone", "A", True, 10, None, None ,None, "A nonmagical wall of solid stone springs into existence at a point you choose within range.", True)
 druid_level_5_spells = [antilife_shell, awaken, commune_with_nature, conjure_elemental, contagion, geas, greater_restoration, insect_plague, mass_cure_wounds, planar_binding, reincarnate, scrying, tree_stride, wall_of_stone]
 
 #level_6
-conjure_fey = spell()
-move_earth = spell()
-sunbeam = spell()
-transport_via_plants = spell()
-wall_of_thorns = spell()
-wind_walk = spell()
+conjure_fey = spell("Conjure Fey", "A", True, 60, None, None, None, "You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form of a beast of challenge rating 6 or lower.", True)
+move_earth = spell("Move Earth", "A", True, 120, None, None, None, "You can reshape dirt, sand, or clay in the area in any manner you choose for the duration.", True)
+sunbeam = spell("Sunbeam", "A", True, 1, "CON", 48, "Radiant", "A beam of brilliant light flashes out from your hand", True)
+transport_via_plants = spell("Transport Via Plants", "A", )
+wall_of_thorns = spell("Wall of Thorns", "A", True, 1, None, None, None, "This spell creates a magical link between a Large or larger inanimate plant within range", False)
+wind_walk = spell("Wind Walk", "A", True, 440, None, None, None, "You and up to ten willing creatures you can see within range assume a gaseous form for the duration", False)
 druid_level_6_spells = [conjure_fey, find_the_path, heal, heroes_feast, move_earth, sunbeam, transport_via_plants, wall_of_thorns, wind_walk]
 
 #level_7
-reverse_gravity = spell()
+reverse_gravity = spell("Reverse Gravity", "A", True, 1, "DEX", None, None, "This spell reverses gravity in a 50-foot-radius, 100- foot high cylinder centered on a point within range.", True)
 druid_level_7_spells = [fire_storm, mirage_arcane, plane_shift, regenerate, reverse_gravity]
 
 #level_8
-animal_shapes = spell()
-antipathy_sympathy = spell()
-control_weather = spell()
-sunburst = spell()
-tsunami = spell()
+animal_shapes = spell("Animal Shapes", "A", True, 1440, None, None, None, "Your magic turns others into beasts.", True)
+antipathy_sympathy = spell("Antipathy Sympathy", 60, True, 14400, "WIS", None, None, "This spell attracts or repels creatures of your choice.", False)
+control_weather = spell("Control Weather", 10, True, 1440, None, None, None, "You take control of the weather within 5 miles of you for the duration.", True)
+sunburst = spell("Sunburst", "A", True, 1, "CON", 72, "Radiant", "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose.", False)
+tsunami = spell("Tsunami", "A", True, 360, "STR", 60, "Bludgeoning", "A wall of water springs into existence at a point you choose within range.", False)
 druid_level_8_spells = [animal_shapes, antipathy_sympathy, control_weather, earthquake, feeblemind, sunburst, tsunami]
 
 #level_9
-shapechange = spell("")
-storm_of_vengeance = spell("")
+shapechange = spell("Shapechange", "A", False, 60, None, None, None, "You assume the form of a different creature for the duration.", True)
+storm_of_vengeance = spell("Storm of Vengeance", "A", True, 1, "CON", 12-60, "Thunder", "A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet.", )
 druid_level_9_spells = [foresight, shapechange, storm_of_vengeance, true_resurrection]
 
 #ranger
